@@ -1,0 +1,8000 @@
+@charset "UTF-8";
+/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+    margin: 0;
+}
+
+/* HTML5 display definitions
+========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    /* 1 */
+    display: block;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+}
+
+.alignleft {
+    float: left;
+    margin: 10px 20px 20px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 10px 0 20px 20px;
+}
+
+.save_img {
+    position: absolute;
+    top: 90%;
+    right: 25%;
+    transform: translate(0, -90%);
+    z-index: 99999;
+    max-width: 180px
+}
+
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+    display: none;
+}
+
+/* Links
+========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+    background-color: transparent;
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+/* Text-level semantics
+========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+    font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+    border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Grouping content
+========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+    margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+/* Forms
+========================================================================== */
+/**
+ * Change font properties to `inherit` in all browsers (opinionated).
+ */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+    font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ * 2. Show the overflow in Edge, Firefox, and IE.
+ */
+button,
+input,
+select {
+    /* 2 */
+    overflow: visible;
+}
+
+/**
+ * Remove the margin in Safari.
+ * 1. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+    /* 1 */
+    margin: 0;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left
+}
+
+.tr {
+    text-align: right;
+}
+
+/**
+ * Remove the inheritence of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritence of text transform in Firefox.
+ */
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+ * Change the cursor in all browsers (opinionated).
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    cursor: pointer;
+}
+
+/**
+ * Restore the default cursor to disabled elements unset by the previous rule.
+ */
+[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+input:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * Correct the odd appearance of search inputs in Chrome and Safari.
+ */
+[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome on OS X and
+ * Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+@font-face {
+    font-family: "Kazmann Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/Kazmann-Sans.eot?#iefix") format("embedded-opentype"), url("/static/wp-content/themes/chernobyl/fonts/Kazmann-Sans.woff2") format("woff2"), url("/static/wp-content/themes/chernobyl/fonts/Kazmann-Sans.woff") format("woff"), url("/static/wp-content/themes/chernobyl/fonts/Kazmann-Sans.ttf") format("truetype"), url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/Kazmann-Sans.svg#Kazmann Sans") format("svg");
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/Roboto/RobotoCondensedLight.eot?#iefix") format("embedded-opentype"), url("/static/wp-content/themes/chernobyl/fonts/Roboto/RobotoCondensedLight.woff") format("woff"), url("/static/wp-content/themes/chernobyl/fonts/Roboto/RobotoCondensedLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/Roboto/RobotoCondensedRegular.eot?#iefix") format("embedded-opentype"), url("/static/wp-content/themes/chernobyl/fonts/Roboto/RobotoCondensedRegular.woff") format("woff"), url("/static/wp-content/themes/chernobyl/fonts/Roboto/RobotoCondensedRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/Roboto/RobotoCondensedBold.eot?#iefix") format("embedded-opentype"), url("/static/wp-content/themes/chernobyl/fonts/Roboto/RobotoCondensedBold.woff") format("woff"), url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/Roboto/RobotoCondensedBold.ttf") format("truetype");
+}
+
+/** Generated by FG **/
+@font-face {
+    font-family: 'HelveticaNeue-Light';
+    src: url('https://chernobyltime.com/wp-content/themes/chernobyl/fonts/HelveticaNeue-Light/HelveticaNeue-Light.eot');
+    src: local('☺'), url('https://chernobyltime.com/wp-content/themes/chernobyl/fonts/HelveticaNeue-Light/HelveticaNeue-Light.woff') format('woff'), url('https://chernobyltime.com/wp-content/themes/chernobyl/fonts/HelveticaNeue-Light/HelveticaNeue-Light.ttf') format('truetype'), url('https://chernobyltime.com/wp-content/themes/chernobyl/fonts/HelveticaNeue-Light/HelveticaNeue-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** Generated by FG **/
+@font-face {
+    font-family: 'helveticaneuecyr-roman';
+    src: url('https://chernobyltime.com/wp-content/themes/chernobyl/fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.eot');
+    src: local('☺'), url('https://chernobyltime.com/wp-content/themes/chernobyl/fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.woff') format('woff'), url('https://chernobyltime.com/wp-content/themes/chernobyl/fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.ttf') format('truetype'), url('https://chernobyltime.com/wp-content/themes/chernobyl/fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+html[lang="pl"],
+html[lang="pl"] body {
+    font-size: 15px;
+    font-family: 'HelveticaNeue-Light';
+}
+
+body {
+    line-height: normal;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+a, button, input, select, textarea, [contenteditable="true"], [tabindex] {
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.box-modal {
+    max-width: 370px;
+    width: 100%;
+    background: #ffffff;
+    height: 160px;
+    position: relative;
+    padding: 20px 20px 20px;
+    color: #1a1a1a;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.arcticmodal-overlay {
+    display: none;
+}
+
+.modal-close {
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+    position: absolute;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.modal-close:hover {
+    opacity: 0.6;
+}
+
+.modal-close:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1a1a1a;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.modal-close:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 2px;
+    background: #1a1a1a;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.box-modal_close {
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+    position: absolute;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.box-modal_close:hover {
+    opacity: 0.6;
+}
+
+.box-modal_close:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1a1a1a;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.box-modal_close:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 2px;
+    background: #1a1a1a;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#feedback-infolist {
+    width: 100%;
+    max-width: 400px;
+    display: table;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+#feedback-infolist li {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.3125rem;
+}
+
+.form-application--column.box-modal {
+    background: #ffffff;
+    color: #1a1a1a;
+    border-radius: 0;
+    padding: 70px 60px;
+    max-width: 470px;
+    width: 100%;
+}
+
+.form-application--column.box-modal .form-application__btn {
+    line-height: 2.5rem;
+}
+
+.form-application--column.box-modal .form-application__field {
+    border: 2px solid #1a1a1a;
+}
+
+.form-application--column.box-modal .form-application__close {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.form-application--column.box-modal .form-application__close:hover {
+    opacity: 0.7;
+}
+
+.form-application--column.box-modal .form-application__close:before {
+    background: #1a1a1a;
+}
+
+.form-application--column.box-modal .form-application__close:after {
+    background: #1a1a1a;
+}
+
+.custom-text {
+    background: #ffffff;
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.custom-text__container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 990px;
+}
+
+.custom-text__wrapper {
+    padding: 32px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+
+.custom-text__close, .form-application__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.custom-text__close:before, .form-application__close:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1a1a1a;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-text__close:after, .form-application__close:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    height: 2px;
+    background: #1a1a1a;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.custom-text__wrapper li,
+.custom-text__wrapper p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 1.875rem;
+    line-height: 1.4;
+}
+
+.custom-text__wrapper b {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.custom-text__wrapper p {
+    font-size: 1rem;
+}
+
+.custom-text__wrapper ol {
+    padding: 12px 0 15px 25px;
+}
+
+.custom-text__wrapper ol a,
+.custom-text__wrapper p a {
+    text-decoration: underline;
+}
+
+.custom-text__wrapper ol a:hover,
+.custom-text__wrapper p a {
+    text-decoration: none;
+}
+
+.custom-text__wrapper ul {
+    padding: 12px 0 15px 25px;
+    list-style: square;
+}
+
+.custom-text__wrapper h2 {
+    text-align: center;
+    font-size: 1.875rem;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 960px;
+    width: 100%;
+}
+
+.featherlight-previous:before,
+.featherlight-next:before {
+    content: "";
+    display: block;
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/arrow-slider.png);
+    width: 37px;
+    height: 69px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    margin-top: -24px;
+}
+
+.featherlight-previous:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    left: 50%;
+    margin-left: -24px;
+}
+
+.featherlight-next:before {
+    right: 50%;
+    margin-right: -24px;
+}
+
+.featherlight-previous:hover:before,
+.featherlight-next:hover:before {
+    opacity: 1;
+}
+
+.featherlight .featherlight-content {
+    overflow: hidden;
+    border-radius: 6px;
+    padding: 40px 40px 0;
+    border-bottom: 40px solid transparent;
+    max-width: 90%;
+}
+
+.featherlight .featherlight-image {
+    width: 100% !important;
+}
+
+.featherlight .featherlight-close-icon {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+    top: 8px;
+    right: 8px;
+}
+
+.owl-carousel .owl-item {
+    z-index: 1;
+}
+
+.owl-carousel .owl-item img {
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "socicon";
+    src: url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/socicon.eot");
+    src: url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/socicon.eot?#iefix") format("embedded-opentype"), url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/socicon.woff") format("woff"), url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/socicon.ttf") format("truetype"), url("https://chernobyltime.com/wp-content/themes/chernobyl/fonts/socicon.svg#socicon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before {
+    font-family: "socicon" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="socicon-"]:before, [class*=" socicon-"]:before {
+    font-family: "socicon" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.socicon-modelmayhem:before {
+    content: "\e000";
+}
+
+.socicon-mixcloud:before {
+    content: "\e001";
+}
+
+.socicon-drupal:before {
+    content: "\e002";
+}
+
+.socicon-swarm:before {
+    content: "\e003";
+}
+
+.socicon-istock:before {
+    content: "\e004";
+}
+
+.socicon-yammer:before {
+    content: "\e005";
+}
+
+.socicon-ello:before {
+    content: "\e006";
+}
+
+.socicon-stackoverflow:before {
+    content: "\e007";
+}
+
+.socicon-persona:before {
+    content: "\e008";
+}
+
+.socicon-triplej:before {
+    content: "\e009";
+}
+
+.socicon-houzz:before {
+    content: "\e00a";
+}
+
+.socicon-rss:before {
+    content: "\e00b";
+}
+
+.socicon-paypal:before {
+    content: "\e00c";
+}
+
+.socicon-odnoklassniki:before {
+    content: "\e00d";
+}
+
+.socicon-airbnb:before {
+    content: "\e00e";
+}
+
+.socicon-periscope:before {
+    content: "\e00f";
+}
+
+.socicon-outlook:before {
+    content: "\e010";
+}
+
+.socicon-coderwall:before {
+    content: "\e011";
+}
+
+.socicon-tripadvisor:before {
+    content: "\e012";
+}
+
+.socicon-appnet:before {
+    content: "\e013";
+}
+
+.socicon-goodreads:before {
+    content: "\e014";
+}
+
+.socicon-tripit:before {
+    content: "\e015";
+}
+
+.socicon-lanyrd:before {
+    content: "\e016";
+}
+
+.socicon-slideshare:before {
+    content: "\e017";
+}
+
+.socicon-buffer:before {
+    content: "\e018";
+}
+
+.socicon-disqus:before {
+    content: "\e019";
+}
+
+.socicon-vkontakte:before {
+    content: "\e01a";
+}
+
+.socicon-whatsapp:before {
+    content: "\e01b";
+}
+
+.socicon-patreon:before {
+    content: "\e01c";
+}
+
+.socicon-storehouse:before {
+    content: "\e01d";
+}
+
+.socicon-pocket:before {
+    content: "\e01e";
+}
+
+.socicon-mail:before {
+    content: "\e01f";
+}
+
+.socicon-blogger:before {
+    content: "\e020";
+}
+
+.socicon-technorati:before {
+    content: "\e021";
+}
+
+.socicon-reddit:before {
+    content: "\e022";
+}
+
+.socicon-dribbble:before {
+    content: "\e023";
+}
+
+.socicon-stumbleupon:before {
+    content: "\e024";
+}
+
+.socicon-digg:before {
+    content: "\e025";
+}
+
+.socicon-envato:before {
+    content: "\e026";
+}
+
+.socicon-behance:before {
+    content: "\e027";
+}
+
+.socicon-delicious:before {
+    content: "\e028";
+}
+
+.socicon-deviantart:before {
+    content: "\e029";
+}
+
+.socicon-forrst:before {
+    content: "\e02a";
+}
+
+.socicon-play:before {
+    content: "\e02b";
+}
+
+.socicon-zerply:before {
+    content: "\e02c";
+}
+
+.socicon-wikipedia:before {
+    content: "\e02d";
+}
+
+.socicon-apple:before {
+    content: "\e02e";
+}
+
+.socicon-flattr:before {
+    content: "\e02f";
+}
+
+.socicon-github:before {
+    content: "\e030";
+}
+
+.socicon-renren:before {
+    content: "\e031";
+}
+
+.socicon-friendfeed:before {
+    content: "\e032";
+}
+
+.socicon-newsvine:before {
+    content: "\e033";
+}
+
+.socicon-identica:before {
+    content: "\e034";
+}
+
+.socicon-bebo:before {
+    content: "\e035";
+}
+
+.socicon-zynga:before {
+    content: "\e036";
+}
+
+.socicon-steam:before {
+    content: "\e037";
+}
+
+.socicon-xbox:before {
+    content: "\e038";
+}
+
+.socicon-windows:before {
+    content: "\e039";
+}
+
+.socicon-qq:before {
+    content: "\e03a";
+}
+
+.socicon-douban:before {
+    content: "\e03b";
+}
+
+.socicon-meetup:before {
+    content: "\e03c";
+}
+
+.socicon-playstation:before {
+    content: "\e03d";
+}
+
+.socicon-android:before {
+    content: "\e03e";
+}
+
+.socicon-snapchat:before {
+    content: "\e03f";
+}
+
+.socicon-twitter:before {
+    content: "\e040";
+}
+
+.socicon-facebook:before {
+    content: "\e041";
+}
+
+.socicon-googleplus:before {
+    content: "\e042";
+}
+
+.socicon-pinterest:before {
+    content: "\e043";
+}
+
+.socicon-foursquare:before {
+    content: "\e044";
+}
+
+.socicon-yahoo:before {
+    content: "\e045";
+}
+
+.socicon-skype:before {
+    content: "\e046";
+}
+
+.socicon-yelp:before {
+    content: "\e047";
+}
+
+.socicon-feedburner:before {
+    content: "\e048";
+}
+
+.socicon-linkedin:before {
+    content: "\e049";
+}
+
+.socicon-viadeo:before {
+    content: "\e04a";
+}
+
+.socicon-xing:before {
+    content: "\e04b";
+}
+
+.socicon-myspace:before {
+    content: "\e04c";
+}
+
+.socicon-soundcloud:before {
+    content: "\e04d";
+}
+
+.socicon-spotify:before {
+    content: "\e04e";
+}
+
+.socicon-grooveshark:before {
+    content: "\e04f";
+}
+
+.socicon-lastfm:before {
+    content: "\e050";
+}
+
+.socicon-youtube:before {
+    content: "\e051";
+}
+
+.socicon-vimeo:before {
+    content: "\e052";
+}
+
+.socicon-dailymotion:before {
+    content: "\e053";
+}
+
+.socicon-vine:before {
+    content: "\e054";
+}
+
+.socicon-flickr:before {
+    content: "\e055";
+}
+
+.socicon-500px:before {
+    content: "\e056";
+}
+
+.socicon-instagram:before {
+    content: "\e057";
+}
+
+.socicon-wordpress:before {
+    content: "\e058";
+}
+
+.socicon-tumblr:before {
+    content: "\e059";
+}
+
+.socicon-twitch:before {
+    content: "\e05a";
+}
+
+.socicon-8tracks:before {
+    content: "\e05b";
+}
+
+.socicon-amazon:before {
+    content: "\e05c";
+}
+
+.socicon-icq:before {
+    content: "\e05d";
+}
+
+.socicon-smugmug:before {
+    content: "\e05e";
+}
+
+.socicon-ravelry:before {
+    content: "\e05f";
+}
+
+.socicon-weibo:before {
+    content: "\e060";
+}
+
+.socicon-baidu:before {
+    content: "\e061";
+}
+
+.socicon-angellist:before {
+    content: "\e062";
+}
+
+.socicon-ebay:before {
+    content: "\e063";
+}
+
+.socicon-imdb:before {
+    content: "\e064";
+}
+
+.socicon-stayfriends:before {
+    content: "\e065";
+}
+
+.socicon-residentadvisor:before {
+    content: "\e066";
+}
+
+.socicon-google:before {
+    content: "\e067";
+}
+
+.socicon-yandex:before {
+    content: "\e068";
+}
+
+.socicon-sharethis:before {
+    content: "\e069";
+}
+
+.socicon-bandcamp:before {
+    content: "\e06a";
+}
+
+.socicon-itunes:before {
+    content: "\e06b";
+}
+
+.socicon-deezer:before {
+    content: "\e06c";
+}
+
+.socicon-medium:before {
+    content: "\e06d";
+}
+
+.socicon-telegram:before {
+    content: "\e06e";
+}
+
+.socicon-openid:before {
+    content: "\e06f";
+}
+
+.socicon-amplement:before {
+    content: "\e070";
+}
+
+.socicon-viber:before {
+    content: "\e071";
+}
+
+.socicon-zomato:before {
+    content: "\e072";
+}
+
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+.iti-flag {
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/flags.png");
+}
+
+.intl-tel-input {
+    width: 100%;
+}
+
+.intl-tel-input .selected-flag .iti-flag {
+    margin-left: 4px;
+}
+
+.intl-tel-input .selected-flag {
+    padding: 0 0 0 3px;
+}
+
+.intl-tel-input .country-list {
+    font-size: 0.9375rem;
+}
+
+.intl-tel-input .country-list .country-name {
+    display: inline-block;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.intro {
+    min-height: 637px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/canvas-1.png") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.intro__content {
+    padding-top: 160px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.intro__content--thanks {
+    padding-top: 37px;
+    padding-bottom: 25px;
+}
+
+.intro__content--thanks strong {
+    font-weight: 400;
+    color: #fdc00f;
+}
+
+.intro__sup-caption {
+    font-size: 1.375rem;
+    font-weight: 300;
+}
+
+.blog_cap .intro__sup-caption {
+    font-size: 1.875rem;
+}
+
+.intro__caption {
+    padding-top: 7px;
+    font-weight: normal;
+    font-family: "Kazmann Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    letter-spacing: 0.06em;
+}
+
+.intro__caption span {
+    display: block;
+}
+
+.intro__caption span strong {
+    font-weight: 400;
+    display: inline-block;
+    width: 418px;
+    height: 73px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/first-title-frame.png") no-repeat;
+    color: #2b1f05;
+    line-height: 4.75rem;
+}
+
+.intro__caption--thanks {
+    font-size: 4.0625rem;
+    letter-spacing: 0.0em;
+}
+
+.intro__action {
+    padding-top: 50px;
+}
+
+.intro__action-caption {
+    font-size: 1.375rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.intro__action-caption strong {
+    font-weight: 400;
+}
+
+.intro__action-btn-wrapper {
+    padding-top: 17px;
+}
+
+.intro__action-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fdc00f;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -332px;
+    width: 314px;
+    height: 52px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+    line-height: 3.375rem;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    white-space: nowrap;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+.intro__action-btn:hover {
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -278px;
+    width: 314px;
+    height: 52px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+    color: #050404;
+}
+
+.intro__action-btn--proposal {
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -607px;
+    width: 503px;
+    height: 54px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+}
+
+.intro__action-btn--proposal:hover {
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -663px;
+    width: 503px;
+    height: 54px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+}
+
+.intro__action-btn--proposal-for-small {
+    display: none;
+    border: 2px solid #fdc00f;
+    background: none;
+    width: auto;
+}
+
+.intro__action-btn--proposal-for-small:hover {
+    background: none;
+    background-color: #fdc00f;
+    width: auto;
+}
+
+.intro__desc {
+    text-align: center;
+    padding-bottom: 36px;
+    padding-top: 12px;
+}
+
+.intro__desc-text {
+    display: inline-block;
+    max-width: 800px;
+    font-size: 1.3125rem;
+    font-weight: 300;
+}
+
+.intro__desc-text strong {
+    color: #ffffff;
+    font-weight: 400;
+    display: block;
+}
+
+.intro__desc-text strong span {
+    color: #fdc00f;
+}
+
+.intro__desc-text--small {
+    font-size: 1.1875rem;
+}
+
+.intro__support {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+.intro__support-left {
+    max-width: 310px;
+    width: 100%;
+    text-align: left;
+}
+
+.intro__support-right {
+    max-width: 270px;
+}
+
+.intro__support-item {
+    position: relative;
+    padding-left: 24px;
+    padding-bottom: 2px;
+    font-size: 1.1875rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.intro__support-item:before {
+    content: '';
+    left: 0;
+    top: 3px;
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-tel.png") no-repeat;
+}
+
+.intro__support-item--email:before {
+    width: 14px;
+    height: 10px;
+    top: 6px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-envelope.png") no-repeat;
+}
+
+.intro__support-item--viber:before {
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-viber.png") no-repeat;
+}
+
+.intro__support-item-link {
+    text-decoration: none;
+    font-size: 1.1875rem;
+    font-weight: 400;
+    color: #ffffff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.intro__support-item-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.intro__action--thank-you {
+    padding-top: 35px;
+}
+
+.intro__action-btn--for-small {
+    display: none;
+}
+
+.intro__content--thanks--question {
+    padding-top: 100px;
+}
+
+.intro__action--thank-you-call {
+    padding-top: 0;
+}
+
+.intro__content--30d {
+    padding-top: 50px;
+}
+
+.intro__social-block {
+    padding-top: 20px;
+}
+
+.intro__social-block-caption {
+    font-size: 2.3125rem;
+    line-height: 2.6875rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Kazmann Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.intro__social-list {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.intro__social-item {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 15px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.intro__social-item:hover {
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2);
+}
+
+.intro__social-item--fb {
+    width: 12px;
+    height: 24px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/soc-fb.png") 50% 50% no-repeat;
+}
+
+.intro__social-item--insta {
+    width: 24px;
+    height: 24px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/soc-insta.png") 50% 50% no-repeat;
+}
+
+.intro__social-item--tw {
+    width: 24px;
+    height: 18px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/soc-twitter.png") 50% 50% no-repeat;
+}
+
+.intro__social-item--vk {
+    width: 24px;
+    height: 14px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/soc-vk.png") 50% 50% no-repeat;
+}
+
+.intro__social-item.intro__social-item--linkedin {
+    width: 24px;
+    height: 24px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/soc-linkedin.png") 50% 50% no-repeat;
+}
+
+.intro_wrrap {
+    display: table;
+}
+
+.intro_wrrap .part {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.intro_wrrap .text_part {
+    width: 67%;
+}
+
+.intro_wrrap .text_wrrap {
+    border: 2px solid #cd9a07;
+    display: table;
+}
+
+.intro_wrrap .text_wrrap .col {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+
+.intro_wrrap .form_part .title_form {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.intro_wrrap .form_part .form-application__field-label {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.intro_wrrap .form_part .form-application__btn {
+
+}
+
+.header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+.header__logo {
+    padding-top: 10px;
+}
+
+.header__logo a {
+    display: inline-block;
+}
+
+.header__logo--thanks {
+    padding-top: 30px;
+}
+
+.header__langs {
+    text-align: center;
+}
+
+.header__langs-item {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 5px;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.header__langs-item:hover {
+    opacity: 0.8;
+}
+
+.header__langs-item--active {
+    text-decoration: underline;
+}
+
+.header__contacts {
+    padding-top: 7px;
+}
+
+.header__contacts-item {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    position: relative;
+    padding-left: 22px;
+    padding-bottom: 2px;
+}
+
+.header__contacts-item:before {
+    content: '';
+    left: 0;
+    top: 3px;
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-viber.png") no-repeat;
+}
+
+.header__contacts-item--skype:before {
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-skype.png") no-repeat;
+}
+
+.header__contacts-item--email:before {
+    width: 14px;
+    height: 10px;
+    top: 6px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-envelope.png") no-repeat;
+}
+
+.header__contacts-item-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.header__contacts-item-link:hover {
+    opacity: 0.85;
+}
+
+.header__tells {
+    display: none;
+    text-align: center;
+}
+
+.header__tells-item-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    /*font-size: 1.125rem;*/
+    font-size: 19.4px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.header__tells-item-link:hover {
+    opacity: 0.8;
+}
+
+.header__item--tells-thank-you {
+    padding-top: 20px;
+}
+
+.header__tells-item--thank-you {
+    position: relative;
+}
+
+.header__tells-item--thank-you:before {
+    content: '';
+    left: -20px;
+    top: 3px;
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-tel.png") no-repeat;
+}
+
+.header__phones {
+    position: relative;
+    font-size: 54px;
+    text-align: center;
+    font-family: "Kazmann Sans", sans-serif;
+    line-height: 0;
+}
+
+.header__phones_sm {
+    font-size: .25em;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.header__phones_sm span {
+    display: block;
+    line-height: 1;
+}
+
+.header__phones_lg {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.header__phones_code {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin-right: 5px;
+    line-height: 1;
+}
+
+.calls_drop_head {
+    position: relative;
+}
+
+.calls_drop_btn {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-right: 5px;
+    border: 6px solid transparent;
+    border-top-color: #fff;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.calls_drop_btn:hover {
+    border-top-color: #fdc00f;
+}
+
+.calls_drop_box {
+    position: absolute;
+}
+
+.calls_drop_box ul {
+    /* display: none; */
+    max-height: 24px;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    position: relative;
+}
+
+.calls_drop_box ul:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 110%;
+    height: 24px;
+    bottom: 0;
+    left: -5%;
+    -webkit-box-shadow: inset 0px -11px 10px 0px #3C3C36;
+    -moz-box-shadow: inset 0px -11px 10px 0px #3C3C36;
+    box-shadow: inset 0px -11px 10px 0px #3C3C36;
+}
+
+.calls_drop_box ul.active {
+    max-height: 400px;
+}
+
+.calls_drop_box ul.active:after {
+    display: none;
+}
+
+.calls_drop_box li a {
+    opacity: .1;
+}
+
+.calls_drop_box li:nth-child(1) a {
+    opacity: .9;
+}
+
+.calls_drop_box li:nth-child(2) a {
+    opacity: .8;
+}
+
+.calls_drop_box li:nth-child(3) a {
+    opacity: .7;
+}
+
+.calls_drop_box li:nth-child(4) a {
+    opacity: .6;
+}
+
+.calls_drop_box li:nth-child(5) a {
+    opacity: .5;
+}
+
+.calls_drop_box li:nth-child(6) a {
+    opacity: .4;
+}
+
+.calls_drop_box .calls_drop_item:hover {
+    opacity: 1;
+}
+
+.calls_drop_item {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-size: 18px;
+    color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.excitel_button_wrap {
+    margin-top: 10px;
+}
+
+
+.about {
+    min-height: 970px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/canvas-2.png") no-repeat;
+    background-position: center bottom;
+    padding: 90px 0;
+}
+
+.about__caption {
+    line-height: 69px;
+}
+
+.about__caption span {
+    display: inline-block;
+    width: 171px;
+    height: 66px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/1500-frame.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.about__subcaption {
+    text-align: center;
+    max-width: 515px;
+    margin: 0 auto;
+    font-size: 1.375rem;
+    font-weight: 300;
+    padding-top: 16px;
+}
+
+.about__list {
+    padding-top: 33px;
+    max-width: 910px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about__item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    max-width: 905px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.about__item--1 {
+    padding-right: 55px;
+}
+
+.about__item-text {
+    max-width: 375px;
+    width: 100%;
+}
+
+.about__item-caption, .about__item-right__caption {
+    font-size: 3.4375rem;
+    letter-spacing: 0.06em;
+    font-family: "Kazmann Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.about__item-caption--1 {
+    padding-top: 38px;
+}
+
+.about__item-caption--one span {
+    display: inline-block;
+    width: 198px;
+    height: 57px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/feeling-frame.png") no-repeat;
+    padding-left: 15px;
+}
+
+.about__item-desc-wrapper {
+    padding-top: 30px;
+}
+
+.about__item-desc {
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 350px;
+    padding-bottom: 24px;
+}
+
+.about__item-desc span {
+    display: block;
+}
+
+.about__item-desc strong {
+    font-weight: 400;
+}
+
+html[lang="pl"] .about__item-desc strong {
+    font-weight: bold;
+    font-family: 'helveticaneuecyr-roman';
+}
+
+.about__item-desc--big {
+    max-width: 365px;
+}
+
+.about__item--2, .about__item--4 {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    padding-top: 20px;
+}
+
+.about__item-left .about__item-desc {
+    max-width: 415px;
+    width: 100%;
+}
+
+.about__item-right__caption {
+    text-align: center;
+    max-width: 285px;
+    padding-top: 37px;
+}
+
+.about__item-right__caption span {
+    display: inline-block;
+    width: 168px;
+    height: 60px;
+    line-height: 63px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/emotions-frame.png") no-repeat;
+    position: relative;
+    top: -18px;
+    z-index: -1;
+}
+
+.about__item--3 {
+    padding-left: 44px;
+}
+
+.about__item--three .about__item-text {
+    max-width: 400px;
+}
+
+.about__item--three .about__item-caption--three {
+    padding-top: 40px;
+}
+
+.about__item--three .about__item-caption--three span {
+    display: inline-block;
+    width: 198px;
+    height: 57px;
+    line-height: 60px;
+    padding-left: 16px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/history-frame.png") no-repeat;
+}
+
+.about__item-left__caption {
+    padding-top: 38px;
+    font-size: 3.4375rem;
+    letter-spacing: 0.06em;
+    font-family: "Kazmann Sans", sans-serif;
+    text-transform: uppercase;
+    max-width: 350px;
+    text-align: center;
+    padding-right: 0px;
+}
+
+.about__item-left__caption span {
+    position: relative;
+    top: -13px;
+    display: inline-block;
+    width: 228px;
+    height: 59px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/friends-frame.png") no-repeat;
+    line-height: 65px;
+}
+
+.about__item-caption--three span {
+    position: relative;
+    top: -13px;
+    display: inline-block;
+    width: 228px;
+    height: 59px;
+    padding-left: 20px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/friends-frame.png") no-repeat;
+    line-height: 65px;
+}
+
+.about__item-caption--1 span {
+    position: relative;
+    display: inline-block;
+    width: 228px;
+    height: 59px;
+    padding-left: 20px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/friends-frame.png") no-repeat;
+    line-height: 65px;
+}
+
+html[lang="en"] .about__item-caption--1 span {
+    width: 146px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="pl"] .about__item-caption--1 span {
+    /*  width: 150px;*/
+    width: 185px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="en"] .about__item-caption--three span {
+    width: 250px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="pl"] .about__item-caption--three span {
+    /*  width: 198px;*/
+    width: 175px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="pl"] .about__item-right__caption span {
+    top: -11px;
+}
+
+html[lang="pl"] .about__item-left__caption span {
+    width: 258px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .about__item-caption--three span {
+        width: auto;
+        height: auto;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+        padding-right: 20px;
+    }
+
+    .about__item-caption--1 span {
+        width: auto;
+        height: auto;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+        padding-right: 20px;
+    }
+
+    html[lang="pl"] .about__item-caption--three span {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about__item-caption--three span {
+        line-height: 65px;
+        top: 0;
+    }
+
+    .about__item-caption--1 span {
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about__item-caption--three span {
+        line-height: 41px;
+    }
+
+    .about__item-caption--1 span {
+        line-height: 45px;
+    }
+
+    html[lang="en"] .about__item-caption--1 span {
+        width: 105px;
+    }
+
+    html[lang="en"] .about__item-caption--three span {
+        width: 170px;
+    }
+
+    html[lang="pl"] .about__item-caption--1 span {
+        width: 112px;
+    }
+
+    html[lang="pl"] .about__item-caption--three span {
+        width: 140px;
+    }
+}
+
+.about__item--four .about__item-right {
+    padding-left: 40px;
+}
+
+.callback {
+    padding-top: 5px;
+}
+
+.callback__link {
+    display: inline-block;
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -37px;
+    width: 161px;
+    height: 35px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    line-height: 2.1875rem;
+    color: #fdc00f;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.callback__link:hover {
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px 0px;
+    width: 161px;
+    height: 35px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+    color: #050404;
+}
+
+.caption {
+    font-size: 4.5rem;
+    font-family: "Kazmann Sans", sans-serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.caption--white {
+    color: #ffffff;
+}
+
+.format {
+    padding: 90px 0;
+}
+
+.format__list {
+    padding-top: 35px;
+    display: table;
+    width: 100%;
+    /*display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;*/
+}
+
+.format__item {
+    position: relative;
+    padding: 0px 30px 28px;
+    margin-left: 15px;
+    max-width: 288px;
+    width: 100%;
+    width: 33.3%;
+    /*border: 3px solid #e1e1e1;*/
+    /*height: 663px;*/
+    display: table-cell;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+}
+
+.format__item_wrrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.format__foot_line {
+    display: table-footer-group;
+}
+
+htmt[lang="en"] .format__item {
+    height: 710px;
+}
+
+.format__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 3px solid #e1e1e1;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.format__item:hover:before,
+.format__item.active:before {
+    border-color: #fdc00f;
+    z-index: 1;
+}
+
+.format__item:hover .format__item-caption,
+.format__item.active .format__item-caption {
+    color: #f00;
+}
+
+/*
+.format__item_link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+*/
+html[lang="en"] .format__item {
+    height: 720px;
+}
+
+.format__item--one {
+    margin-left: 0;
+}
+
+.format__image {
+    text-align: center;
+    height: 225px;
+    vertical-align: middle;
+    padding-top: 13px;
+    left: 0;
+    width: 100%;
+    position: relative;
+}
+
+.format__image:after {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.format__image img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.format__item-caption {
+    font-size: 1.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.format__item-subcaption {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    padding: 8px 0 15px;
+    height: 72px;
+}
+
+.format__item-subcaption span {
+    display: block;
+}
+
+.format__separator {
+    width: 30px;
+    height: 3px;
+    background: #fdc00f;
+    margin: 0 auto;
+}
+
+.format__body {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.format__body-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+htmt[lang="en"] .format__item:not(.format__item--three) .format__body-list {
+    min-height: 310px;
+}
+
+.format__list-item {
+    font-size: 1.08rem;
+    font-weight: 400;
+    list-style: none;
+    padding-left: 16px;
+    display: block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.format__item_label_top {
+    top: 0px;
+    right: 10px;
+    z-index: 2;
+    position: absolute;
+}
+
+.format__list-item:before {
+    position: absolute;
+    display: block;
+    content: "• ";
+    left: 0;
+    top: 0px;
+    font-size: 1.1875rem;
+    color: #fdc00f;
+}
+
+.format__footer {
+    min-height: 57px;
+}
+
+.format__price-wrapper {
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.format__supprice {
+    /*text-decoration: line-through;*/
+    font-size: 1.125rem;
+    color: #858585;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0px;
+}
+
+.format__supprice > * {
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+html[lang="en"] .format__supprice .sm,
+html[lang="pl"] .format__supprice .sm {
+    /*text-decoration: line-through;*/
+    display: inline-block;
+    float: left;
+    font-size: 1.125rem;
+    color: #858585;
+}
+
+.format__supprice {
+    text-decoration: line-through;
+}
+
+.format__price {
+    position: relative;
+    padding-top: 21px;
+    display: inline-block;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+}
+
+.format__price span {
+    font-size: 2.25rem;
+}
+
+.format .format__price span {
+    font-size: 1.8rem;
+}
+
+.format__item--one .format__price-wrapper,
+.format__item--two .format__price-wrapper {
+    text-align: center;
+    /*height: 73px;*/
+}
+
+/*
+html[lang="en"] .format__item--one .format__price-wrapper,
+html[lang="en"] .format__item--two .format__price-wrapper {
+    height: 120px;
+}
+
+html[lang="pl"] .format__item--one .format__price-wrapper,
+html[lang="pl"] .format__item--two .format__price-wrapper {
+    height: 58px;
+}
+*/
+.format__item--one .format__price span,
+.format__item--two .format__price span {
+    font-size: 1.7rem;
+}
+
+html[lang="en"] .format__item--one .format__price span,
+html[lang="en"] .format__item--two .format__price span,
+html[lang="pl"] .format__item--one .format__price span,
+html[lang="pl"] .format__item--two .format__price span,
+html[lang="en"] .format__item--one .format__subprice,
+html[lang="en"] .format__item--two .format__subprice,
+html[lang="pl"] .format__item--one .format__subprice,
+html[lang="pl"] .format__item--two .format__subprice {
+    color: #1a1a1a;
+}
+
+html[lang="en"] .format__supprice,
+html[lang="pl"] .format__supprice {
+    width: 118px;
+    right: -68px;
+}
+
+html[lang="pl"] .format__supprice {
+    right: -85px;
+}
+
+html[lang="en"] .format__supprice {
+    width: 136px;
+}
+
+html[lang="pl"] .format__supprice {
+    /*width: 128px;*/
+    width: 147px;
+}
+
+html[lang="en"] .format__item--one .format__supprice {
+    right: -85px;
+}
+
+html[lang="en"] .format__item--one .format__subprice {
+    right: -81px;
+}
+
+html[lang="pl"] .format__item--one .format__subprice {
+    right: -89px;
+}
+
+html[lang="en"] .format__item--two .format__subprice {
+    /*right: -81px;*/
+    right: -92px;
+}
+
+html[lang="pl"] .format__item--two .format__subprice {
+    right: -103px;
+}
+
+html[lang="en"] .format__item--one .format__supprice .line,
+html[lang="pl"] .format__item--one .format__supprice .line,
+html[lang="en"] .format__item--two .format__supprice .line,
+html[lang="pl"] .format__item--two .format__supprice .line {
+    text-decoration: line-through;
+}
+
+html[lang="en"] .format__supprice .slesh,
+html[lang="pl"] .format__supprice .slesh {
+    margin: 0 3px;
+}
+
+.format__btn-wrapper {
+    text-align: center;
+    padding-top: 0px;
+}
+
+.format__attention {
+    position: relative;
+    text-indent: 14px;
+    font-size: 1.0625rem;
+    color: #858585;
+}
+
+.format__attention:before {
+    content: '* ';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    display: block;
+    color: #fdc00f;
+}
+
+.format__btn-wrapper {
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 2;
+}
+
+.format__btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    font-size: 1.1875rem;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -74px;
+    width: 224px;
+    height: 49px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+    line-height: 52px;
+    white-space: nowrap;
+}
+
+.format__item.active .format__btn,
+.format__item:hover .format__btn {
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -125px;
+    width: 224px;
+    height: 49px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+}
+
+.format__subprice {
+    /* position: absolute; */
+    /* right: -42px; */
+    display: inline-block;
+    bottom: -2px;
+    color: red;
+    font-size: 1.4375rem;
+    letter-spacing: -0.09em;
+}
+
+.format__subprice span {
+    font-size: 1.375rem;
+    color: red;
+    letter-spacing: -0.04em;
+}
+
+.format__item--one .format__subprice,
+.format__item--two .format__subprice {
+    right: -53px;
+}
+
+.action {
+    min-height: 658px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/canvas-4.png") 50% 50% no-repeat;
+    background-size: cover;
+    padding: 144px 0 130px;
+    margin-top: -75px;
+}
+
+.action--footer {
+    min-height: 487px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/canvas-7.png") 50% 50% no-repeat;
+    margin-top: -80px;
+    position: relative;
+    z-index: 11;
+    padding-top: 150px;
+    background-size: cover;
+}
+
+.action__subcaption {
+    padding-top: 3px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.25rem;
+    padding-bottom: 19px;
+}
+
+.action__caption {
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: "Kazmann Sans", sans-serif;
+    line-height: 4.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.action__caption p {
+    margin: 0 !important
+}
+
+.action__caption span {
+    display: block;
+}
+
+.action__caption strong {
+    display: inline-block;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/action-text-frame.png") 50% 50% no-repeat;
+    width: 300px;
+    height: 72px;
+    line-height: 73px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.action__caption strong.customize {
+    display: inline-block;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/action-text-2.png") 50% 50% no-repeat;
+    width: 190px;
+    height: 72px;
+    line-height: 73px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+html[lang="en"] .action__caption strong {
+    width: 300px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="en"] .action__container .action__caption strong {
+    width: 280px;
+}
+
+@media only screen and (min-width: 480px) {
+    html[lang="en"] .action__container .action__caption strong {
+        width: 350px;
+    }
+}
+
+html[lang="en"] .action__caption--footer .action__caption strong {
+    width: 216px;
+}
+
+.action__caption--footer {
+    letter-spacing: 0.05em;
+}
+
+.action__caption--footer strong {
+    width: 216px;
+    height: 67px;
+    line-height: 69px;
+    display: inline-block;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/footer-action-frame.png") 50% 50% no-repeat;
+}
+
+html[lang="pl"] .action__caption--footer strong {
+    width: 278px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.action__order {
+    max-width: 530px;
+    width: 100%;
+    margin: 29px auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    box-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: distribute;
+}
+
+.action__order-left {
+    position: relative;
+}
+
+.action__order-left-btn {
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #171717;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 229px;
+    height: 52px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/action-date-frame.png") 50% 50% no-repeat;
+    text-align: center;
+    line-height: 53px;
+    padding-left: 35px;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.action__order-left-btn > span {
+    color: #ffffff;
+}
+
+.action__order-left-btn:before {
+    position: absolute;
+    left: 30px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    content: '';
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/action-calendar-icon.png") no-repeat;
+    z-index: 1;
+}
+
+.action__order-left-btn-input {
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: 26px;
+    top: 25px;
+}
+
+.action__order-right {
+    font-size: 1.25rem;
+    color: #171717;
+    font-weight: 300;
+    padding-left: 20px;
+    line-height: 3.125rem;
+    white-space: nowrap;
+}
+
+.action__order-right-field-wrapper {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.action__order-right-field-wrapper .action__order-right-field {
+    border: none;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/action-days-frame.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    padding: 0 13px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-indent: -4px;
+    padding-top: 1px;
+}
+
+.action__order-right-field-wrapper .action__order-right-field::-webkit-input-placeholder {
+    color: #271c22;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.action__order-right-field-wrapper .action__order-right-field::-moz-placeholder {
+    color: #271c22;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.action__order-right-field-wrapper .action__order-right-field:-moz-placeholder {
+    color: #271c22;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.action__order-right-field-wrapper .action__order-right-field:-ms-input-placeholder {
+    color: #271c22;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.action__order-right-field-wrapper .action__order-right-field:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.action__order-right-field-wrapper .action__order-right-field:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+.action__order-right-field-wrapper .action__order-right-field:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+.action__order-right-field-wrapper .action__order-right-field:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+.action__form-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.wrap-form-faq {
+    /*display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.form-faq .form-application__field,
+.action__form-wrapper .form-application__field {
+    margin-bottom: 0;
+}
+
+.action__form-subcaption {
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 19px;
+}
+
+.action__form-subcaption strong {
+    font-weight: 600;
+}
+
+.action__form-subcaption--footer {
+    margin-top: 14px;
+}
+
+.action__form-oferta-link {
+    color: #271c22;
+}
+
+.action__form-oferta-link:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.opinions {
+    min-height: 654px;
+    overflow: hidden;
+}
+
+.opinions__container {
+    position: relative;
+    padding-top: 85px;
+}
+
+.opinions__container:after {
+    width: 1000px;
+    height: 654px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/canvas-5-1.png") no-repeat;
+    position: absolute;
+    content: '';
+    display: block;
+    left: -640px;
+    top: 0;
+}
+
+.opinions__caption {
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.opinions__caption span {
+    display: block;
+}
+
+.opinions__caption strong {
+    display: inline-block;
+    max-width: 363px;
+    width: 100%;
+    height: 74px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/opinion-frame.png") no-repeat;
+    background-size: cover;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+html[lang="pl"] .opinions__caption strong {
+    max-width: 400px;
+}
+
+@media only screen and (max-width: 991px) {
+    html[lang="pl"] .opinions__caption strong {
+        max-width: 417px;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    html[lang="pl"] .opinions__caption strong {
+        max-width: 555px;
+        padding-top: 4px;
+        height: 87px;
+
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+    .format__item--one .format__price-wrapper,
+    .format__item--two .format__price-wrapper {
+        height: 73px;
+    }
+
+    html[lang="en"] .format__item--one .format__price-wrapper,
+    html[lang="en"] .format__item--two .format__price-wrapper {
+        height: 120px;
+    }
+
+    html[lang="pl"] .format__item--one .format__price-wrapper,
+    html[lang="pl"] .format__item--two .format__price-wrapper {
+        height: 58px;
+    }
+}
+
+.opinions__list-wrapper {
+    padding-top: 30px;
+    overflow: hidden;
+    max-width: 820px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.opinions__list {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.opinions__list-item {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.opinions__list-item::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.opinions__left {
+    float: left;
+    width: 21.875%;
+    text-align: center;
+}
+
+.tpadwisor {
+    max-width: 190px;
+    margin-top: -30px
+}
+
+/*.opinions__right {
+    float: left;
+    width: 78.125%;
+    padding-left: 1px;
+    padding-top: 10px;
+}*/
+.opinions__right {
+    float: none;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.opinions__right img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.opinions__image {
+    max-width: 110px;
+}
+
+.opinions__link {
+    margin-top: 12px;
+    padding-right: 25px;
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #145680;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.opinions__link:hover {
+    opacity: 0.8;
+}
+
+.opinions__right-caption {
+    font-size: 1.4375rem;
+    font-weight: 400;
+    font-family: #171717;
+    min-height: 50px;
+}
+
+.opinions__right-desc {
+    font-weight: 300;
+    font-size: 1.1875rem;
+}
+
+.opinions__right-desc span {
+    display: block;
+}
+
+.opinions__right-author {
+    padding-top: 23px;
+    font-size: 1.1875rem;
+    font-weight: 300;
+    color: #838383;
+}
+
+.opinions__list.owl-carousel .owl-prev.owl-prev {
+    font-size: 0;
+    position: absolute;
+    left: -88px;
+    display: block;
+    top: 50%;
+    width: 43px;
+    height: 49px;
+    margin-top: -38px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/slider-arr-left.png") no-repeat;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.opinions__list.owl-carousel .owl-prev.owl-prev:hover {
+    opacity: 0.8;
+}
+
+.opinions__list.owl-carousel .owl-next.owl-next {
+    font-size: 0;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: -88px;
+    width: 43px;
+    height: 49px;
+    margin-top: -38px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/slider-arr-right.png") no-repeat;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.opinions__list.owl-carousel .owl-next.owl-next:hover {
+    opacity: 0.8;
+}
+
+.steps {
+    min-height: 946px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/canvas-6.png") 50% 50% no-repeat;
+    z-index: 9;
+    position: relative;
+    padding-top: 160px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.steps__caption span {
+    max-width: 208px;
+    height: 69px;
+    display: inline-block;
+    width: 100%;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/steps-title-frame.png") no-repeat;
+    color: #1a1a1a;
+    line-height: 73px;
+    padding-left: 4px;
+}
+
+html[lang="pl"] .steps__caption span {
+    max-width: 250px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.steps__subcaption {
+    font-size: 1.375rem;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.steps__list {
+    position: relative;
+    min-height: 430px;
+    max-width: 877px;
+    margin: 74px auto 0;
+    position: relative;
+    left: 41px;
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/steps-bg.png) no-repeat;
+    background-position: 50% 50%;
+}
+
+.steps__list-item {
+    position: absolute;
+    display: none;
+    text-align: center;
+}
+
+.steps__list-item--one {
+    display: block;
+    left: -31px;
+    top: -37px;
+}
+
+.steps__top {
+    height: 97px;
+    text-align: center;
+}
+
+.steps__text {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.steps__text span {
+    display: block;
+}
+
+.steps__list-item--two {
+    display: block;
+    left: 225px;
+    top: 124px;
+}
+
+.steps__list-item--three {
+    display: block;
+    right: 246px;
+    top: 2px;
+}
+
+.steps__list-item--four {
+    right: 88px;
+    top: 203px;
+    display: block;
+}
+
+.steps__list-item--five {
+    display: block;
+    bottom: -53px;
+    left: 153px;
+}
+
+.form-application {
+    height: auto;
+}
+
+.form-application__field-label--name:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 18px;
+    width: 14px;
+    height: 16px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-user.png") no-repeat;
+}
+
+.form-application__field-label--email:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 14px;
+    top: 21px;
+    width: 16px;
+    height: 12px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-mail.png") no-repeat;
+}
+
+.form-application__field-label--tel:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    width: 16px;
+    height: 16px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-tel.png") no-repeat;
+}
+
+.form-application__field-label--question-for-us:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 19px;
+    width: 16px;
+    height: 16px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/question-mark-key.png") no-repeat;
+}
+
+.form-application__field-label {
+    display: inline-block;
+    /*max-width: 213px;*/
+    width: 29%;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.form-application__field-label--question-for-us {
+    width: 90%;
+}
+
+.wrap-form-faq .row {
+    text-align: center;
+}
+
+.form-application__field-label--big {
+    max-width: 100%;
+    width: 100%;
+}
+
+.wrap-form-faq .form-application__field-label {
+    margin-bottom: 15px;
+}
+
+.wrap-form-faq .form-application__field-label .intl-tel-input.allow-dropdown.separate-dial-code .selected-dial-code {
+    padding-left: 11px;
+}
+
+.form-application__wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    min-width: 320px;
+}
+
+.form-application__field {
+    max-width: 100%;
+    width: 100%;
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    display: block;
+    outline: none;
+    color: #1a1a1a;
+    font-size: 1.1875rem;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 13px 5px 11px 37px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+html[lang="pl"] .form-application__field {
+    font-family: 'HelveticaNeue-Light';
+}
+
+.form-application__field::-webkit-input-placeholder {
+    color: #1a1a1a;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.form-application__field::-moz-placeholder {
+    color: #1a1a1a;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.form-application__field:-moz-placeholder {
+    color: #1a1a1a;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.form-application__field:-ms-input-placeholder {
+    color: #1a1a1a;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.form-application__field:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-application__field:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.form-application__field:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.form-application__field:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-application__field-label--btn {
+    max-width: 222px;
+    width: 100%;
+    position: relative;
+    height: 49px;
+    margin-left: 10px;
+}
+
+.form-faq .form-application__field-label--btn {
+    margin: 0 auto;
+    display: block;
+}
+
+#btn-pay,
+.btn-book-now,
+.form-application__btn {
+    max-width: 222px;
+    width: 100%;
+    position: relative;
+    height: 49px;
+    width: 100%;
+    line-height: 48px;
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -227px;
+    width: 222px;
+    height: 49px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+    border: none;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: #171717;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    background-color: transparent;
+    -webkit-transition: background 0.3s, color 0.3s;
+    -moz-transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
+}
+
+.form-application__btn:hover {
+    color: #ffffff;
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -176px;
+    width: 222px;
+    height: 49px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+}
+
+.form-application__btn--call {
+    width: auto;
+    max-width: 100%;
+    width: 100%;
+    background: #ffffff;
+    border: 3px solid #1a1a1a;
+}
+
+.form-application__btn--call:hover {
+    background: #fdc00f;
+    border: 3px solid #fdc00f;
+    width: auto;
+    max-width: 100%;
+    width: 100%;
+    color: #171717;
+}
+
+.form-application__field-group {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    width: 100%;
+}
+
+.form-application--white .form-application__field {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.form-application--white .form-application__field::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-application--white .form-application__field::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-application--white .form-application__field:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-application--white .form-application__field:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-application--vertical {
+    padding-top: 140px;
+}
+
+.form-application--vertical .form-application__wrapper {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start;
+    -ms-flex-align: start;
+    margin: 0 -10px;
+}
+
+.form-application--vertical .form-application__field,
+.form-application--vertical .form-application__btn {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.form-application--vertical .form-application__btn {
+    margin-top: 6px;
+}
+
+.form-application__caption {
+    font-weight: 400;
+    font-size: 1.875rem;
+    color: #1a1a1a;
+    margin: 0;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.form-application__sub-caption {
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #271c22;
+    margin: 0;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 26px;
+}
+
+.form-application__field-label.form-application__field-label--tel.form-application__field-label--big > .intl-tel-input.allow-dropdown {
+    margin-bottom: 20px !important;
+}
+
+.action__form-wrapper .form-application__field-label.form-application__field-label--tel .intl-tel-input {
+    font-size: 1.1875rem;
+}
+
+.popup-calculator__container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 860px;
+    width: 100%;
+    min-width: 800px;
+    padding-bottom: 20px;
+}
+
+.popup-calculator__container.small {
+    min-width: 700px;
+}
+
+.popup-calculator__wrapper {
+    padding: 20px 50px;
+}
+
+.popup-calculator__caption {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "Kazmann Sans", sans-serif;
+    color: #1a1a1a;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.popup-calculator__caption span {
+    display: inline-block;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/popup-calculator.png") no-repeat 50% 50%;
+    background-size: contain;
+    padding: 10px 15px 9px;
+}
+
+.popup-calculator__subcaption {
+    text-align: center;
+    font-size: 1.1875rem;
+    text-align: center;
+    color: #000;
+    margin-top: -5px;
+}
+
+.popup-calculator__subcaption span {
+    display: inline-block;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/popup-discounts.png") no-repeat 50% 50%;
+    background-size: contain;
+    padding: 9px 5px 9px;
+    font-weight: 600;
+}
+
+.popup-calculator__list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    padding-top: 20px;
+}
+
+.popup-calculator__list-item {
+    max-width: 225px;
+    width: 100%;
+}
+
+.popup-calculator__list-item-caption {
+    font-size: 1.125rem;
+    letter-spacing: -0.009em;
+    padding-bottom: 15px;
+}
+
+.popup-calculator__list-item--center {
+    text-align: center;
+}
+
+.popup-calculator__list-item-numbers {
+    font-size: 0;
+}
+
+.popup-calculator__list-item-number-item {
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #1a1a1a;
+    border-right: none;
+    font-size: 1.125rem;
+    width: 33px;
+    height: 33px;
+    color: #1a1a1a;
+    line-height: 30px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.popup-calculator__list-item-number-item:hover {
+    opacity: 0.8;
+    background: #fdc00f;
+}
+
+.popup-calculator__list-item-number-item:last-child {
+    border-right: 2px solid #1a1a1a;
+}
+
+.popup-calculator__list-item-number-item--active {
+    background: #fdc00f;
+}
+
+.popup-calculator__price {
+    font-size: 2.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 2.6875rem;
+}
+
+.popup-calculator__price-currency {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 2.375rem;
+    margin-left: 4px;
+    line-height: 2.375rem;
+}
+
+.popup-calculator__info {
+    max-width: 535px;
+    width: 100%;
+    margin: 40px auto 18px;
+    border: 3px solid #e3e3e3;
+    padding: 30px 50px 8px;
+}
+
+.popup-calculator__info-item {
+    font-size: 1.375rem;
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.popup-calculator__info-item span {
+    display: block;
+}
+
+.popup-calculator__info-item--medium {
+    font-size: 1.125rem;
+}
+
+.popup-calculator__attention {
+    text-align: center;
+    max-width: 535px;
+    width: 100%;
+    margin: 0 auto;
+    color: #5c5c5c;
+}
+
+.popup-calculator__price-caption {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Kazmann Sans", sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    padding-top: 30px;
+}
+
+.popup-calculator__btn-wrapper {
+    padding-top: 30px;
+}
+
+.popup-calculator__price-caption span {
+    display: inline-block;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/popup-ind-price.png") no-repeat 50% 50%;
+    background-size: contain;
+    padding: 10px 15px 9px;
+}
+
+html[lang="pl"] .popup-calculator__price-caption span {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.popup-calculator__desc-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    max-width: 685px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.popup-calculator__desc-list-left, .popup-calculator__desc-list-right {
+    width: 50%;
+    padding-top: 24px;
+}
+
+.popup-calculator__desc-list-left .popup-calculator__desc-list-item {
+    padding-bottom: 18px;
+}
+
+.popup-calculator__desc-list-item {
+    position: relative;
+    padding-left: 14px;
+    font-size: 1.125rem;
+    color: #4a4a4a;
+    letter-spacing: -0.009em;
+    padding-bottom: 14px;
+}
+
+.popup-calculator__desc-list-item span {
+    display: block;
+}
+
+.popup-calculator__desc-list-item:before {
+    content: "• ";
+    left: 0px;
+    top: 1px;
+    color: #fdc00f;
+    display: block;
+    position: absolute;
+    font-size: 1.125rem;
+}
+
+.popup-calculator__btn-wrapper {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 3.3125rem;
+}
+
+.popup-calculator__btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #1a1a1a;
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -551px;
+    width: 290px;
+    height: 54px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+.popup-calculator__btn:hover {
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -495px;
+    width: 290px;
+    height: 54px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+}
+
+.popup-calculator__price-wrapper {
+    white-space: nowrap;
+}
+
+.range-slider__wrapper {
+    padding-top: 5px;
+}
+
+.range-slider {
+    width: 100%;
+}
+
+.range-slider__range {
+    -webkit-appearance: none;
+    width: 100%;
+    display: block;
+    height: 7px;
+    border-radius: 8px;
+    background: #e8e8e8;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.range-slider__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fdc00f;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+}
+
+.range-slider__range::-webkit-slider-thumb:hover {
+    background: #ffcc00;
+}
+
+.range-slider__range:active::-webkit-slider-thumb {
+    background: #ffcc00;
+}
+
+.range-slider__range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #fdc00f;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+}
+
+.range-slider__range::-moz-range-thumb:hover {
+    background: #ffcc00;
+}
+
+.range-slider__range:active::-moz-range-thumb {
+    background: #ffcc00;
+}
+
+.range-slider__value {
+    padding-top: 10px;
+    font-size: 1.3125rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.range-slider__items {
+    padding-top: 3px;
+    font-size: 1.3125rem;
+    font-weight: 600;
+    display: inline;
+}
+
+.countdown {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    padding-top: 6px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.countdown__item {
+    margin: 0px 7px;
+    text-align: center;
+    position: relative;
+}
+
+.countdown__item span {
+    border-radius: 4px;
+    width: 30px;
+    height: 45px;
+    display: inline-block;
+    background: #171717;
+    margin: 0 2px;
+}
+
+.countdown__item:after {
+    content: ':';
+    position: absolute;
+    display: block;
+    right: -10px;
+    top: 4px;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.countdown__item:last-child:after {
+    display: none;
+}
+
+.countdown__number {
+    font-size: 24px;
+    position: absolute;
+    font-weight: 400;
+    color: #ffffff;
+    left: 11px;
+    letter-spacing: 20px;
+    top: 6px;
+}
+
+.countdown__label {
+    color: #171717;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding-top: 0px;
+}
+
+#seconds {
+    color: #fdc00f;
+    font-weight: 700;
+}
+
+#seconds:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 44px;
+    height: 31px;
+    right: -46px;
+    top: 2px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-arrow-1.png") no-repeat;
+}
+
+.reasons {
+    min-height: 981px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/canvas-3.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -50px;
+    padding-top: 154px;
+    color: #ffffff;
+}
+
+.reasons__caption span {
+    color: #050404;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 82px;
+    display: inline-block;
+    /*width: 30%;*/
+    /* width: 231px; */
+    /*width: 250px;*/
+    /*height: 40%;*/
+    height: 73px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/reasons-frame-1.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+html[lang="pl"] .reasons__caption span,
+html[lang="en"] .reasons__caption span {
+    width: 264px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="pl"] .reasons__caption span {
+    width: 280px;
+}
+
+.reasons__subcaption {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 300;
+    padding-top: 6px;
+}
+
+.reasons__list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 53px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.reasons__item {
+    width: 30.6%;
+    padding-bottom: 80px;
+}
+
+.reasons__item--1 .reasons__top span {
+    width: 143px;
+    height: 43px;
+    line-height: 2.9375rem;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/reasons-frame-2.png") no-repeat;
+}
+
+html[lang="pl"] .reasons__item--1 .reasons__top span,
+html[lang="en"] .reasons__item--1 .reasons__top span {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="pl"] .reasons__item--1 .reasons__top span {
+    width: 170px;
+}
+
+.reasons__item--2 .reasons__top span {
+    width: 121px;
+    height: 44px;
+    line-height: 2.9375rem;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/reasons-frame-3.png") no-repeat;
+}
+
+html[lang="en"] .reasons__item--2 .reasons__top span {
+    width: 145px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.reasons__item--3 .reasons__top span {
+    width: 219px;
+    height: 42px;
+    line-height: 2.8125rem;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/reasons-frame-4.png") no-repeat;
+}
+
+html[lang="pl"] .reasons__item--3 .reasons__top span,
+html[lang="en"] .reasons__item--3 .reasons__top span {
+    width: 244px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="pl"] .reasons__item--3 .reasons__top span {
+    width: 144px;
+}
+
+.reasons__item--4 .reasons__top {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.reasons__item--4 .reasons__top span {
+    width: 319px;
+    height: 43px;
+    line-height: 2.6875rem;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/reasons-frame-5.png") no-repeat;
+}
+
+@media only screen and (max-width: 800px) {
+    html[lang="en"] .reasons__item--4 .reasons__top span {
+        width: 300px;
+    }
+}
+
+html[lang="pl"] .reasons__item--4 .reasons__top span {
+    width: 268px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.reasons__item--5 .reasons__top span {
+    width: 252px;
+    height: 41px;
+    padding-left: 5px;
+    line-height: 2.75rem;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/reasons-frame-6.png") no-repeat;
+}
+
+html[lang="pl"] .reasons__item--5 .reasons__top span {
+    width: 272px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.reasons__item--6 .reasons__top {
+    padding-top: 16px;
+}
+
+.reasons__item--6 .reasons__top span {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    line-height: 2.8125rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/reasons-frame-2.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+html[lang="en"] .reasons__item--6 .reasons__top span {
+    padding-right: 5px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="pl"] .reasons__item--6 .reasons__top span {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 170px;
+    padding-left: 10px;
+}
+
+.reasons__top {
+    min-height: 100px;
+    font-size: 2.25rem;
+    font-family: "Kazmann Sans", sans-serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.reasons__top span {
+    display: block;
+    margin: 0 auto;
+    color: #050404;
+    text-align: center;
+}
+
+.reasons__bottom {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.reasons__bottom span {
+    display: block;
+}
+
+.callAnimatedIconWrapper {
+    left: 6%;
+    bottom: 6%;
+    position: fixed;
+    width: 140px;
+    height: 140px;
+    z-index: 999;
+    transition: opacity 0.1s ease;
+    -moz-transition: opacity 0.1s ease;
+    -webkit-transition: opacity 0.1s ease;
+    -o-transition: opacity 0.1s ease;
+}
+
+.callAnimatedIconWrapper.in {
+    opacity: 0 !important;
+    z-index: -100;
+}
+
+.callAnimatedCircleBig, .callAnimatedCirclePhoneWrapper, .callAnimatedCircleSmall {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.callAnimatedCircleBig {
+    width: 65%;
+    height: 65%;
+    border: 1px solid #755b47;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: circleBig;
+    animation-duration: 2.5s;
+}
+
+.callAnimatedCircleSmall {
+    width: 60%;
+    height: 60%;
+    background-color: #755b47;
+    opacity: .4;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: circleSmall;
+    animation-duration: 2.5s;
+}
+
+/* The animation code */
+@keyframes circleSmall {
+    0% {
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    10% {
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+    }
+    30% {
+        -ms-transform: scale(0.97, 0.97);
+        -webkit-transform: scale(0.97, 0.97);
+        transform: scale(0.97, 0.97);
+        opacity: .5;
+    }
+    50% {
+        -ms-transform: scale(1.12, 1.12);
+        -webkit-transform: scale(1.12, 1.12);
+        transform: scale(1.12, 1.12);
+    }
+    70% {
+        -ms-transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
+        transform: scale(1.05, 1.05);
+        opacity: .7;
+    }
+    90% {
+        -ms-transform: scale(0.95, 0.95);
+        -webkit-transform: scale(0.95, 0.95);
+        transform: scale(0.95, 0.95);
+    }
+    100% {
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: .4;
+    }
+}
+
+@keyframes circleBig {
+    0% {
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    10% {
+        -ms-transform: scale(1.3, 1.3);
+        -webkit-transform: scale(1.3, 1.3);
+        transform: scale(1.3, 1.3);
+    }
+    20% {
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+    }
+    30% {
+        -ms-transform: scale(1.4, 1.4);
+        -webkit-transform: scale(1.4, 1.4);
+        transform: scale(1.4, 1.4);
+    }
+    40% {
+        -ms-transform: scale(1.3, 1.3);
+        -webkit-transform: scale(1.3, 1.3);
+        transform: scale(1.3, 1.3);
+    }
+    50% {
+        -ms-transform: scale(1.5, 1.5);
+        -webkit-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+    }
+    60% {
+        -ms-transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+    }
+    70% {
+        -ms-transform: scale(1.25, 1.25);
+        -webkit-transform: scale(1.25, 1.25);
+        transform: scale(1.25, 1.25);
+    }
+    80% {
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+    }
+    90% {
+        -ms-transform: scale(1.3, 1.3);
+        -webkit-transform: scale(1.3, 1.3);
+        transform: scale(1.3, 1.3);
+    }
+    100% {
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+/* The element to apply the animation to */
+.callAnimatedCirclePhoneWrapper {
+    cursor: pointer;
+    width: 40%;
+    height: 40%;
+    background-color: #e6ddd6;
+    text-align: center;
+    line-height: 100px;
+    transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -webkit-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
+}
+
+.someRemarkForAndrey {
+    position: relative;
+    top: -14px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.callAnimatedCirclePhoneWrapper:hover {
+    background-color: #F3EDE9;
+}
+
+.callAnimatedCirclePhoneWrapper span {
+    color: #755b47;
+    font-size: 23px;
+}
+
+.callAnimatedCirclePhoneWrapper:hover span {
+    /*color: #fff; */
+}
+
+.callAnimatedIconWrapper {
+    display: none;
+}
+
+.bootstrap-datetimepicker-widget table td {
+    border: 2px solid #1a1a1a;
+}
+
+.bootstrap-datetimepicker-widget table td.disabled, .bootstrap-datetimepicker-widget table td.disabled:hover, .bootstrap-datetimepicker-widget table td.day.disabled {
+    color: #000;
+    font-size: 1.125rem;
+    font-size: 1.125rem;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #fff;
+}
+
+.table-condensed .today {
+    background-color: #5e5e5e !important;
+    color: #ffffff !important;
+}
+
+.table-condensed > tbody > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > thead > tr > th {
+    padding: 2.5px;
+}
+
+.bootstrap-datetimepicker-widget table td.active.active.today {
+    background: black;
+    color: #1a1a1a;
+}
+
+.bootstrap-datetimepicker-widget table td.active.active {
+    background-color: #271c22;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover {
+    background-color: #d8a103;
+}
+
+.bootstrap-datetimepicker-widget table td.day.disabled:hover {
+    background-color: #f2f2f2;
+}
+
+.bootstrap-datetimepicker-widget table td.day.active:hover {
+    background-color: #1a1a1a;
+    opacity: 0.8;
+}
+
+.bootstrap-datetimepicker-widget table td.today:before {
+    display: none;
+}
+
+.bootstrap-datetimepicker-widget table td.day {
+    background-color: #fdc00f;
+    color: #1a1a1a;
+}
+
+.bootstrap-datetimepicker-widget table td.day.red {
+    background-color: red;
+    color: #fff;
+}
+
+.bootstrap-datetimepicker-widget table td.day.red:hover {
+    background-color: #ce0000;
+}
+
+.bootstrap-datetimepicker-widget table td.day.green {
+    background-color: green;
+    color: #fff;
+}
+
+.bootstrap-datetimepicker-widget table td.day.green:hover {
+    background-color: #039203;
+}
+
+.bootstrap-datetimepicker-widget table td.day.red.disabled {
+    background-color: #fff;
+    color: #000;
+}
+
+.bootstrap-datetimepicker-widget table td.day.green.disabled {
+    background-color: #fff;
+    color: #000;
+}
+
+.bootstrap-datetimepicker-widget table td.day.green.active,
+.bootstrap-datetimepicker-widget table td.day.red.active {
+    background-color: #271c22;
+}
+
+.picker-switch {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bootstrap-datetimepicker-widget table td span {
+    display: inline-block;
+    width: 54px;
+    height: 25px;
+    line-height: 24px;
+    margin: 2px 1.5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.bootstrap-datetimepicker-widget table td {
+    height: 40px;
+    line-height: 40px;
+}
+
+.bootstrap-datetimepicker-widget table td span.active {
+    background-color: #fdc00f;
+    color: #1a1a1a;
+}
+
+.footer-action {
+    background: #040404;
+    padding: 75px 0;
+}
+
+.footer-action__caption {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3125rem;
+    font-weight: 700;
+}
+
+.footer-action__form {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.footer-action__form .form-application__field-label--btn {
+    max-width: 270px;
+}
+
+.footer-action__form .form-application__field-label--btn:after {
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-arrow-yellow.png");
+    width: 44px;
+    height: 31px;
+    bottom: -5px;
+}
+
+.footer-action__form .form-application__btn {
+    border: 2px solid #fdc00f;
+    color: #fdc00f;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.footer-action__form .form-application__btn:hover {
+    background: #fdc00f;
+    color: #271c22;
+}
+
+.footer {
+    background: #1a1a1a;
+    margin-top: -55px;
+}
+
+.footer__bottom {
+    background: #1f1f1f;
+}
+
+.footer__top {
+    padding-bottom: 18px;
+    padding-top: 28px;
+}
+
+.footer__top-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    padding-top: 17px;
+}
+
+.footer__logo {
+    padding-top: 13px;
+}
+
+.footer__socials {
+    padding-top: 23px;
+    max-width: 253px;
+    width: 100%;
+}
+
+.footer__social-btn-wrapper {
+    position: relative;
+    padding-left: 34px;
+}
+
+.footer__social-btn-wrapper:before {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/icon-fb.png") no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.footer__social-btn {
+    color: #1a1a1a;
+}
+
+.footer__social-btn:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer__bottom-container {
+    min-height: 63px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+.footer__bottom-item:first-child {
+    padding-top: 1px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 620px;
+    width: 100%;
+}
+
+.footer__item {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #4b4949;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.footer__item:hover {
+    color: #5e5e5e;
+}
+
+.footer__item--logo {
+    padding-top: 8px;
+}
+
+.footer__item--logo img {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.footer__item--logo img:hover {
+    -webkit-filter: brightness(1.3);
+    filter: brightness(1.3);
+}
+
+.popup-form, .popup-calculator {
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    background: #fff;
+}
+
+.popup-form__container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 800px;
+    min-width: 760px;
+}
+
+.popup-form__wrapper {
+    padding: 20px 25px;
+}
+
+.popup-form__content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+.popup-form__top {
+    min-height: 85px;
+}
+
+.popup-form__left {
+    max-width: 358px;
+    width: 100%;
+}
+
+.popup-form__right {
+    max-width: 255px;
+    width: 100%;
+}
+
+#bookModal-1 .page-title,
+.popup-form__left-caption {
+    text-transform: uppercase;
+    font-family: "Kazmann Sans", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#bookModal-1 .page-title span,
+.popup-form__left-caption span {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/popup-price.png") no-repeat;
+    padding: 10px 25px 5px;
+    background-position: 50% 50%;
+    background-size: contain;
+    white-space: nowrap;
+}
+
+#bookModal-1 .page-title span {
+    width: 100%;
+}
+
+#bookModal-1 .page-title {
+    margin-bottom: 15px;
+}
+
+#bookModal-1 .popup-form__container {
+
+    min-width: 310px;
+}
+
+#bookModal-1 .popup-form__content {
+    max-width: 290px;
+}
+
+#bookModal-1 .wrapper-step-2 {
+    width: 280px;
+}
+
+#bookModal-1 input[type="radio"] {
+    display: none;
+}
+
+/*
+input[type="radio"] + label::before,
+input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 36px;
+    width: 39px;
+    margin: 0 5px 0 0;
+    background: url(images/radio-btn-bg.png) 0 0 no-repeat;
+}
+*/
+
+#bookModal-1 input[type="radio"] + label > span.check {
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    height: 36px;
+    width: 39px;
+    margin: 0 5px 0 0;
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/radio-button-off.png) 0 0 no-repeat;
+}
+
+/*
+input[type="radio"]:checked + label::before,
+input[type="radio"]:checked + label:before {
+    background: url(images/radio-btn-bg-hover.png) 0 0 no-repeat;
+}
+*/
+#bookModal-1 input[type="radio"]:checked + label > span.check {
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/radio-button-on.png) 0 0 no-repeat;
+}
+
+#bookModal-1 input[type="radio"]:checked + label .price-text {
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+#bookModal-1 input[type="radio"] + label > .box {
+    padding: 0 40px;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#bookModal-1 input[type="radio"] + label .text {
+    /*padding-left: 25px;*/
+    display: block;
+    font-weight: bold;
+}
+
+html[lang="pl"] #bookModal-1 input[type="radio"] + label .text {
+    width: 190px;
+}
+
+#bookModal-1 input[type="submit"].btn.btn-large {
+    display: table;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+#bookModal-1 .form-row {
+    position: relative;
+    padding: 10px 0;
+}
+
+#bookModal-1 .form-row:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#bookModal-1 hr {
+    margin: 5px 20px;
+}
+
+.btn-book-now:hover,
+.btn-book-now:active,
+.btn-book-now:focus,
+.btn-book-now {
+    cursor: pointer;
+}
+
+html[lang="en"] .popup-form__left-caption span {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+html[lang="pl"] .popup-form__left-caption span {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.popup-form__right-caption {
+    text-transform: uppercase;
+    font-family: "Kazmann Sans", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.popup-form__right-caption span {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/popup-date.png") no-repeat;
+    padding: 10px 25px 8px;
+    background-position: 50% 50%;
+    background-size: contain;
+    white-space: nowrap;
+    max-width: 253px;
+    width: 100%;
+}
+
+.box-modal .popup-form__block-title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Kazmann Sans", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/popup-date.png") no-repeat;
+    padding: 10px 25px 8px;
+    background-position: 50% 50%;
+    -weblit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    white-space: nowrap;
+}
+
+.box-modal .popup-form__wrap-title {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.popup-form__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price_color_tab_list {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.price_color_tab_list .tab_list {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.3rem;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: all .3s
+}
+
+.price_color_tab_list .tab_list.active {
+    border: 3px solid #000;
+    transition: all .3s
+}
+
+.price_color_tab_list .tab_list.yellow {
+    background: #fdc00f
+}
+
+.price_color_tab_list .tab_list.green {
+    background: #008000
+}
+
+.price_color_tab_list .tab_list.red {
+    background: #ff0000
+}
+
+.price_color_tab_list .tab_list:hover {
+    transform: translateY(-3px)
+}
+
+.tabs_content {
+    display: none
+}
+
+.tabs_content.active {
+    display: block
+}
+
+.popup-form__table thead th {
+    border: none;
+    background: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: left;
+    padding-bottom: 4px;
+    padding: 4px 15px;
+}
+
+.popup-form__table thead th span {
+    display: block;
+}
+
+.popup-form__table thead th:first-child {
+    padding-right: 40px;
+}
+
+.popup-form__table tbody tr td {
+    border-collapse: collapse;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #171717;
+    padding: 4px 15px;
+}
+
+.popup-form__table tbody tr:nth-child(odd) td {
+    background: #f2f2f2;
+}
+
+.popup-form__table tbody tr:nth-child(even) td {
+    background: #fafafa;
+}
+
+.popup-form-why {
+    margin-top: 30px;
+    padding: 26px 32px 30px 30px;
+    border: 3px solid #e3e3e3;
+}
+
+.popup-form-why__caption {
+    font-size: 1.25rem;
+    padding-bottom: 15px;
+    color: #000;
+}
+
+.popup-form-why__desc {
+    font-size: 1.10625rem;
+    line-height: 1.75rem;
+    color: #4b4b4b;
+    font-weight: 300;
+}
+
+.popup-form__form {
+    padding: 0 14px;
+}
+
+.datepicker-wrapper {
+    height: 215px;
+}
+
+.popup-form__field-label {
+    position: relative;
+    font-size: 1.125rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.popup-form__field {
+    width: 100%;
+    background: #f2f2f2;
+    border: 1px solid #1a1a1a;
+    font-size: 1.125rem;
+    padding: 10px 10px 10px;
+}
+
+.popup-form__field::-webkit-input-placeholder {
+    color: #c3c3c3;
+}
+
+.popup-form__field::-moz-placeholder {
+    color: #c3c3c3;
+}
+
+.popup-form__field:-moz-placeholder {
+    color: #c3c3c3;
+}
+
+.popup-form__field:-ms-input-placeholder {
+    color: #c3c3c3;
+}
+
+.popup-form__field--count {
+    /*margin-bottom: 10px;*/
+    font-size: 0.875rem;
+    margin: 5px 0;
+}
+
+.popup-form__field--count::-webkit-input-placeholder {
+    color: #3e3e3e;
+}
+
+.popup-form__field--count::-moz-placeholder {
+    color: #3e3e3e;
+}
+
+.popup-form__field--count:-moz-placeholder {
+    color: #3e3e3e;
+}
+
+.popup-form__field--count:-ms-input-placeholder {
+    color: #3e3e3e;
+}
+
+.popup-form__field-wrapper-count {
+    position: relative;
+    padding: 12px 20px 12px 0;
+}
+
+.popup-form__field-wrapper-count span {
+    display: inline-block;
+    font-size: 18px;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.popup-form__field-wrapper-count .popup-form__field--count {
+    display: inline-block;
+    vertical-align: middle;
+    width: 43px;
+    height: 43px;
+    background: #f2f2f2;
+    border: 1px solid #1a1a1a;
+    text-align: center;
+    padding: 0 4px 0 2px;
+}
+
+.popup-form__hidden-inputs {
+    display: none;
+}
+
+.popup-form__btn-wrapper {
+    text-align: center;
+    position: relative;
+}
+
+.popup-form__price-count {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.popup-form__price-count span {
+    font-style: italic;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.wrapper-step-2 .form-group.btn-wrap {
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#btn-pay,
+.btn-book-now,
+.popup-form__btn.popup-form__btn {
+    max-width: 227px;
+    height: 52px;
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -386px;
+    width: 227px;
+    height: 52px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+}
+
+#btn-pay:hover,
+.btn-book-now:hover,
+.popup-form__btn.popup-form__btn:hover {
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/css/sprite.png);
+    background-position: 0px -440px;
+    width: 227px;
+    height: 53px;
+    color: #171717;
+    height: 52px;
+    background-image: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite.png");
+}
+
+/*
+#btn-bron-1.popup-form__btn.popup-form__btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 300;
+}
+*/
+#btn-bron-1 {
+    display: none;
+}
+
+.popup-form__info {
+    padding-top: 20px;
+    font-size: 1rem;
+    color: #4b4b4b;
+    text-align: center;
+}
+
+.popup-form__info-link {
+    color: #4b4b4b;
+    font-size: 1rem;
+}
+
+.popup-form__info-link:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.popup__form-order-caption {
+    font-family: "Kazmann Sans", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 0.06em;
+}
+
+.popup-form--fourth .popup__form-order-caption {
+    max-width: 570px;
+    margin: 0 auto;
+    padding-bottom: 22px;
+}
+
+.popup-form--fourth .popup__form-order-caption strong {
+    font-weight: 400;
+    display: inline-block;
+}
+
+.popup-form--fourth .popup-form__right-caption {
+    text-transform: none;
+    font-size: 1.125rem;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: -0.009em;
+    padding-bottom: 10px;
+    padding-top: 13px;
+}
+
+.popup-form--fourth .popup-form__content {
+    max-width: 570px;
+}
+
+.popup-form--fourth .popup-form__left {
+    max-width: 270px;
+    width: 100%;
+}
+
+.popup-form--fourth .popup-form__right {
+    max-width: 230px;
+    width: 100%;
+}
+
+.popup__form-hidden-order {
+    display: none;
+}
+
+.popup-form__field--textarea {
+    min-height: 205px;
+    resize: none;
+}
+
+.popup-form__bottom {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.popup-form__bottom .popup-form__btn-wrapper {
+    margin-top: 20px;
+}
+
+.popup-form__tour-program-toggle-wrapper {
+    padding-top: 15px;
+}
+
+.popup-form__tour-program-toggle {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: -0.03em;
+    padding-right: 20px;
+}
+
+
+.popup-form__tour-program-toggle {
+    display: inline-block;
+    text-decoration: none;
+    color: #171717;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-position: 0 -54px;
+    width: 314px;
+    height: 52px;
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/btn_toggle.png);
+    background-repeat: no-repeat;
+    line-height: 3.375rem;
+    text-align: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    white-space: nowrap;
+    -webkit-transition: background 0.2s, color .2s;
+    -moz-transition: background 0.2s, color .2s;
+    transition: background 0.2s, color .2s;
+    cursor: pointer;
+}
+
+.popup-form__tour-program-toggle.active,
+.popup-form__tour-program-toggle:hover {
+    background-position: 0 0;
+}
+
+
+/*.popup-form__tour-program-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e259";
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}*/
+
+.popup-form__tour-program-toggle.active:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: 7px;
+}
+
+.popup-form__tour-program-wrapper {
+    display: none;
+}
+
+.popup-form__tour-program-wrapper.active {
+    display: block;
+}
+
+.popup-form__tour-program-content-toggle:last-child {
+    cursor: pointer;
+    text-align: center;
+    font-style: italic;
+    color: #5e5e5e;
+    margin: 0;
+}
+
+.popup-form__tour-program-item {
+    padding-bottom: 15px;
+    border-bottom: 2px dashed black;
+    margin-bottom: 15px;
+}
+
+.popup-form__tour-program-item:last-child {
+    border-bottom: none;
+}
+
+.popup-form__tour-program {
+    max-width: 665px;
+    margin: 0 auto;
+    /*padding-top: 15px;*/
+    /*display: none;*/
+}
+
+.popup-form__tour-program.active {
+    display: block;
+}
+
+.popup-form__tour-program-content {
+    font-size: 1.125rem;
+}
+
+.popup-form__tour-program-caption {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.popup-form__tour-program-caption--uppercase {
+    text-transform: uppercase;
+}
+
+.popup-form__field-label--tours {
+    line-height: 1.5rem;
+}
+
+.modal-attention-caption {
+    color: red;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*link to landing start*/
+.block_landing {
+    display: block;
+    position: fixed;
+    z-index: 11;
+    top: 43%;
+    left: 0;
+    width: calc(100vw - 90px);
+    max-width: 327px;
+    padding: 10px 10px 20px;
+    background-color: #007079;
+    text-align: center;
+    -webkit-transform: translate3d(-100%, -50%, 0);
+    -ms-transform: translate3d(-100%, -50%, 0);
+    transform: translate3d(-100%, -50%, 0);
+    -webkit-transition: transform .3s;
+    transition: transform .3s;
+}
+
+.block_landing a {
+    text-decoration: none;
+}
+
+/*.block_landing:hover,*/
+.block_landing.hover {
+    -webkit-transform: translate3d(0%, -50%, 0);
+    -ms-transform: translate3d(0%, -50%, 0);
+    transform: translate3d(0%, -50%, 0);
+}
+
+.block_landing:before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -3px;
+}
+
+.block_landing.hover .box-modal_close {
+    display: block;
+}
+
+.block_landing .box-modal_close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    display: none;
+    bottom: auto;
+    background-color: #007079;
+}
+
+.block_landing .box-modal_close:before,
+.block_landing .box-modal_close:after {
+    background-color: #fff;
+}
+
+.block_landing img {
+    max-width: 100%;
+}
+
+.block_landing p {
+    margin: 2px 0 8px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn_land_link {
+    display: block;
+    width: 190px;
+    height: 42px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 39px;
+    color: #fff;
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/btn_bg2.png) 0 0 no-repeat;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.btn_land_link:hover {
+    background-position: 0 100%;
+}
+
+.btn_land_open {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 240px;
+    height: 52px;
+    padding-right: 39px;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 47px;
+    color: #fdc00f;
+    background: #007079 url(https://chernobyltime.com/wp-content/themes/chernobyl/images/btn_bg1.png) 0 100% no-repeat;
+    text-transform: uppercase;
+    transform: rotate(90deg) translate(-100%, -100%);
+    transform-origin: left top;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.block_landing .ship_icon {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    display: block;
+    width: 44px;
+    height: 36px;
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/ship_icon.gif) center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    vertical-align: middle;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.sh_btn_right_center {
+    /*top: 42% !important;*/
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -moz-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+.marqueeTwo {
+    background-color: #fdc00f;
+    color: #000000;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marqueeTwo span {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 40s infinite linear;
+    -moz-animation: scroll 40s infinite linear;
+    animation: scroll 40s infinite linear;
+}
+
+.choose {
+    min-height: 658px;
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/canvas-4.png) 50% 50% no-repeat;
+    background-size: cover;
+    padding: 144px 0 130px;
+    margin-top: -90px;
+}
+
+.choose .wrap {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 960px;
+    width: 100%;
+}
+
+.choose .action__caption {
+    font-size: 3.1rem;
+}
+
+.choose .action__caption p {
+    margin: 1rem auto;
+}
+
+.choose .list_title {
+    text-align: center;
+    font-family: "Kazmann Sans", sans-serif;
+    font-size: 2rem;
+    margin: 0.5rem auto;
+    letter-spacing: 0.1rem;
+}
+
+.choose .intro_list li {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.1rem;
+    color: #000;
+    position: relative;
+}
+
+.choose .intro_list li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: green;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    top: 0.3rem;
+    left: -1.5rem;
+
+}
+
+.choose .intro_list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    color: #fdc00f;
+    left: -1.1rem;
+    width: 0.4rem;
+    height: 0.6rem;
+    top: 0.4rem;
+    vertical-align: middle;
+    border: 0 solid;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 5;
+}
+
+.choose .text_wrrap {
+    padding: 0.9rem;
+}
+
+.choose .bottom {
+    text-decoration: none;
+    margin-left: -3rem;
+    margin-top: 2.5rem;
+    display: block;
+}
+
+.choose .bottom span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #383837;
+    font-size: 1.9rem
+}
+
+.choose .bottom img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.choose .form-application {
+    padding: 1rem;
+    position: relative;
+    left: 2rem;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.choose .form-application img {
+    position: absolute;
+    top: -1rem;
+    right: -1.5rem;
+}
+
+.choose .form-application .title_form {
+    font-family: "Kazmann Sans", sans-serif;
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.choose .form-application__field-label--btn {
+    margin: 0 auto;
+    max-width: 292px;
+    max-width: 292px;
+}
+
+.choose .form-application__btn {
+    background-image: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/sprites/sprite2.png);
+    color: #fff;
+    background-position: 0px -494px;
+
+    max-width: 292px;
+    width: 292px;
+    height: 57px;
+}
+
+.choose .form-application__btn:hover {
+    background-position: -1px -549px;
+}
+
+.choose .form-application__field {
+    max-width: 292px;
+}
+
+.choose .form-application__field-label {
+    margin-left: 0
+}
+
+.blog_link {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fdc00f;
+    font-family: "Kazmann Sans", sans-serif;
+    text-decoration: none;
+}
+
+.intro {
+    position: relative;
+    z-index: 900;
+}
+
+.blog:after {
+    width: 1000px;
+    height: 654px;
+    z-index: -1;
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/canvas-5-1.png) no-repeat;
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    bottom: 50px;
+}
+
+.blog {
+    padding: 100px 0;
+    margin-top: -50px;
+    position: relative;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.posts_item {
+    width: 32%;
+    border: 1px solid #fdc00f;
+    background: #fdc00f;
+    padding: 0 0 10px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.posts_item img {
+    width: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover;
+    height: auto !important;
+    max-height: 200px;
+}
+
+.posts_item h3 {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+.posts_item h3 a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-family: "Kazmann Sans", sans-serif;
+}
+
+.posts_item .date {
+    margin: 5px;
+    font-size: 12px;
+    color: #888888;
+    text-align: right;
+}
+
+.posts_item p {
+    margin: 5px;
+}
+
+.blog ul li {
+    list-style-type: circle;
+}
+
+.blog ul {
+    padding-left: 30px
+}
+
+/*link to landing end*/
+/*=MEDIA*/
+@media only screen and (min-width: 1400px) {
+    .intro__caption {
+        height: 165px;
+        overflow: hidden;
+    }
+
+    .intro__caption--thanks {
+        height: 86px;
+        margin-top: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .save_img {
+        right: 15%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+}
+
+.choose .form-application {
+    left: 1rem;
+}
+
+.choose .form-application img {
+    right: 0
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .reasons__list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .callAnimatedIconWrapper {
+        display: none !important;
+    }
+
+    .reasons__list {
+        padding-top: 20px;
+    }
+
+    .reasons {
+        padding-top: 100px;
+    }
+
+    .reasons__item.reasons__item {
+        max-width: 100%;
+        width: 50%;
+        padding-bottom: 25px;
+    }
+
+    .header__phones {
+        display: none;
+    }
+
+    .header__tells {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .save_img {
+        right: 5%;
+    }
+
+    .posts_item {
+        width: 480%;
+    }
+
+    .choose .intro_wrrap .text_wrrap .col {
+        display: block;
+        vertical-align: top;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center
+    }
+
+    .choose .text_wrrap {
+        border: none;
+    }
+
+    .choose .intro_wrrap .text_wrrap .col ul {
+        margin-left: 2rem
+    }
+
+    .choose .intro_wrrap .text_wrrap .col ul li {
+        text-align: left;
+    }
+
+    .choose .bottom {
+        margin-top: 0.5rem;
+    }
+
+    .choose .action__caption {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .caption {
+        font-size: 3.125rem;
+        line-height: 3.4375rem;
+    }
+
+    .about__subcaption {
+        font-size: 1.125rem;
+        padding-top: 0px;
+    }
+
+    .opinions__caption strong {
+        width: auto;
+        height: auto;
+        background-position: 50% 50%;
+        background-size: contain;
+        line-height: 30px;
+        display: inline-block;
+        padding: 13px 30px 11px;
+    }
+
+    .opinions__container {
+        padding-top: 40px;
+    }
+
+    .opinions__container:after {
+        background: none;
+    }
+
+    .opinions {
+        min-height: 1px;
+        padding-bottom: 100px;
+    }
+
+    .about__caption {
+        line-height: 55px;
+    }
+
+    .about__caption span {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/1500-frame.png") no-repeat;
+        background-position: center center;
+        background-size: contain;
+        padding: 15px 20px;
+    }
+
+    .steps__caption span {
+        height: auto;
+        width: auto;
+        line-height: 30px;
+        background-size: contain;
+        background-position: 50% 50%;
+        padding: 10px 25px;
+    }
+
+    .steps {
+        padding-top: 80px;
+        padding-bottom: 200px;
+        min-height: 1px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .about__list {
+        padding-top: 10px;
+    }
+
+    .action {
+        padding: 110px 0 88px;
+        min-height: 1px;
+    }
+
+    .format {
+        padding: 40px 0;
+    }
+
+    /*.format__list {
+        -webkit-box-lines: multiple;
+        -moz-box-lines: multiple;
+        box-lines: multiple;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: distribute;
+        -moz-box-pack: distribute;
+        box-pack: distribute;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
+        justify-content: space-around;
+        -ms-flex-pack: distribute;
+    }*/
+    /*.format__item {
+        margin: 10px 10px;
+    }
+
+    .format__item--two {
+        border: 3px solid #e1e1e1;
+    }*/
+    .format__item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .format__item_label_top {
+        right: 5px;
+    }
+
+    .format__item:before {
+        left: 5px;
+        right: 5px;
+    }
+
+    .about__item--1 {
+        padding-right: 0;
+    }
+
+    .about {
+        padding: 40px 0;
+    }
+
+    .about__item--3 {
+        padding-left: 0;
+    }
+
+    .about__item--4 {
+        padding-left: 0;
+    }
+
+    .about__item-left .about__item-desc {
+        max-width: 400px;
+    }
+
+    .about__item-text {
+        max-width: 400px;
+    }
+
+    .about__item-desc--big {
+        padding-bottom: 0;
+    }
+
+    .about__item--2, .about__item--4, .about__item--4 {
+        padding-top: 10px;
+    }
+
+    .about__item--two .about__item-left, .about__item--four .about__item-left {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+        -webkit-order: 1;
+        -moz-order: 1;
+        order: 1;
+        -ms-flex-order: 1;
+    }
+
+    .about__item--two .about__item-right, .about__item--four .about__item-right {
+        -webkit-box-ordinal-group: 0;
+        -moz-box-ordinal-group: 0;
+        box-ordinal-group: 0;
+        -webkit-order: 0;
+        -moz-order: 0;
+        order: 0;
+        -ms-flex-order: 0;
+    }
+
+    .about__item-right__caption {
+        max-width: 400px;
+        text-align: left;
+        padding-top: 5px;
+    }
+
+    .about__item-right__caption span {
+        display: inline-block;
+        background: url("https://chernobyltime.com/wp-content/themes/chernobyl/images/emotions-frame.png") 0 no-repeat;
+        width: auto;
+        background-size: contain;
+        height: auto;
+        position: static;
+        padding: 5px 18px;
+        line-height: 52px;
+    }
+
+    .about__item--three .about__item-caption--three {
+        padding-top: 0px;
+    }
+
+    .about__item-desc-wrapper {
+        padding-top: 15px;
+    }
+
+    .about__item--four .about__item-right {
+        padding-left: 0;
+    }
+
+    .about__item-left__caption {
+        padding-top: 0;
+    }
+
+    .about__item--4 {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .about__item--four .about__item-left__caption {
+        max-width: 400px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .about__item--four .about__item-left {
+        -webkit-box-ordinal-group: 0;
+        -moz-box-ordinal-group: 0;
+        box-ordinal-group: 0;
+        -webkit-order: 0;
+        -moz-order: 0;
+        order: 0;
+        -ms-flex-order: 0;
+        max-width: 400px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .about__item--four .about__item-right {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+        -webkit-order: 1;
+        -moz-order: 1;
+        order: 1;
+        -ms-flex-order: 1;
+    }
+
+    .about__item--four .about__item-right .about__item-desc {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .popup-calculator__container {
+        min-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .intro__desc-text {
+        font-size: 1.1875rem;
+    }
+
+    .steps {
+        min-height: 1px;
+        padding: 80px 0 135px;
+    }
+
+    .steps__list {
+        position: static;
+        background: none;
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: distribute;
+        -moz-box-pack: distribute;
+        box-pack: distribute;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
+        justify-content: space-around;
+        -ms-flex-pack: distribute;
+        -webkit-box-lines: multiple;
+        -moz-box-lines: multiple;
+        box-lines: multiple;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        min-height: 1px;
+    }
+
+    .steps__list-item, .steps__list-item--one, .steps__list-item--two, .steps__list-item--three, .steps__list-item--four, .steps__list-item--five {
+        position: static;
+        width: 50%;
+        padding-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .opinions__list .owl-controls {
+        text-align: center;
+    }
+
+    .opinions__list .owl-dots {
+        margin: 0 auto;
+        max-width: 300px;
+        margin-top: 30px;
+    }
+
+    .opinions__list .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        cursor: pointer;
+        cursor: hand;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .opinions__list .owl-dot span {
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        background: #d6d6d6;
+        display: block;
+        -webkit-backface-visibility: visible;
+        -webkit-transition: opacity 200ms ease;
+        -moz-transition: opacity 200ms ease;
+        -ms-transition: opacity 200ms ease;
+        -o-transition: opacity 200ms ease;
+        transition: opacity 200ms ease;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        display: none;
+    }
+
+    .opinions__list .owl-dot.active span {
+        background: #869791;
+    }
+
+    .opinions__list .owl-nav {
+        display: none;
+    }
+
+    .opinions__list .owl-dot span {
+        display: block;
+    }
+
+    .about__item {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center;
+    }
+
+    .about__item.about__item--3 {
+        /*flex-direction: column-reverse;*/
+        -webkit-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+
+        -webkit-box-direction: reverse;
+        -moz-box-direction: reverse;
+    }
+
+    .about__item--3 .about__item-right__caption {
+        margin-bottom: 15px;
+    }
+
+    .about__item-caption--1 {
+        padding-top: 15px;
+    }
+
+    .action__caption {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+
+    .action__caption strong {
+        width: auto;
+        height: auto;
+        background-size: contain;
+        line-height: 30px;
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+    .action__form-wrapper {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center;
+    }
+
+    .wrap-form-faq {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center;
+    }
+
+    .wrap-form-faq .form-application__field-label,
+    .action__form-wrapper .form-application__field-label {
+        /*max-width: 300px;*/
+        margin-bottom: 15px;
+    }
+
+    .form-application__field-label {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form-faq .form-application__field-label--btn,
+    .action__form-wrapper .form-application__field-label--btn {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .form-faq .form-application__btn,
+    .action__form-wrapper .form-application__btn {
+        max-width: 300px;
+        width: 100%;
+        background: none;
+        border: 3px solid #171717;
+        padding-top: 0;
+        line-height: 46px;
+    }
+
+    .form-faq .form-application__btn:hover,
+    .action__form-wrapper .form-application__btn:hover {
+        background: #171717;
+    }
+
+    .form-faq .form-application__field-label--btn {
+        margin: 0 auto;
+    }
+
+    .action__form-subcaption {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .popup-form__container {
+        min-width: 400px;
+    }
+
+    .popup-form__left {
+        margin-right: 40px;
+    }
+
+    .popup-calculator__container.small {
+        min-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .intro__social-block-caption {
+        font-size: 1.875rem;
+        line-height: 2.125rem;
+    }
+
+    .popup-calculator__list {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center;
+    }
+
+    .popup-calculator__desc-list-item {
+        font-size: 1rem;
+        padding-bottom: 4px;
+    }
+
+    .popup-calculator__desc-list-left .popup-calculator__desc-list-item {
+        padding-bottom: 4px;
+    }
+
+    .popup-calculator__list-item {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .popup-calculator__desc-list {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center;
+        padding-bottom: 20px;
+    }
+
+    .popup-calculator__desc-list-left, .popup-calculator__desc-list-right {
+        max-width: 300px;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .popup-calculator__caption {
+        font-size: 2.5rem;
+    }
+
+    .popup-calculator__container {
+        min-width: 400px;
+    }
+
+    .popup-calculator__info {
+        margin: 15px auto 10px;
+        border: 3px solid #e3e3e3;
+        padding: 20px 30px 8px;
+        max-width: 470px;
+    }
+
+    .popup-calculator__attention {
+        font-size: 1rem;
+    }
+
+    .popup-calculator__info-item {
+        font-size: 1.125rem;
+    }
+
+    .popup-calculator__info-item--medium {
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+
+    .popup-calculator__price-caption,
+    .popup-calculator__btn-wrapper {
+        padding-top: 10px;
+    }
+
+    .format__item {
+        width: 100%;
+        max-width: 360px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .format__image {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .footer__bottom-container,
+    .footer__bottom-item:first-child {
+        -webkit-box-lines: multiple;
+        -moz-box-lines: multiple;
+        box-lines: multiple;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        box-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        text-align: center;
+    }
+
+    .footer__item {
+        padding: 4px 0;
+        margin: 10px;
+    }
+
+    .footer__bottom {
+        padding-top: 6px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .intro__desc-text {
+        max-width: 600px;
+        font-size: 18px;
+    }
+
+    .intro__desc-text strong {
+        display: inline;
+    }
+
+    .intro {
+        min-height: 1px;
+        padding-bottom: 70px;
+    }
+
+    .intro__action {
+        padding-top: 20px;
+    }
+
+    /* .header__item--contacts {
+         display: none;
+     }
+     */
+    .intro__content {
+        padding-top: 40px;
+    }
+
+    .intro__caption {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+
+    .intro__caption span strong {
+        width: auto;
+        height: auto;
+        line-height: 2.75rem;
+        padding: 8px 50px 5px;
+        background-size: contain;
+    }
+
+    html[lang="pl"] .intro__caption span strong {
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+    .reasons {
+        margin-top: -70px;
+        padding-bottom: 20px;
+    }
+
+    .reasons__subcaption {
+        font-size: 1.125rem;
+    }
+
+    .reasons__item.reasons__item {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .reasons__bottom {
+        font-size: 1.125rem;
+    }
+
+    .reasons__top {
+        min-height: 1px;
+        padding-bottom: 5px;
+    }
+
+    .opinions__right-desc {
+        font-size: 1rem;
+    }
+
+    .opinions__right-desc span {
+        display: inline;
+    }
+
+    .opinions__right-caption {
+        font-size: 1.125rem;
+    }
+
+    .opinions__link {
+        padding-right: 0;
+        font-size: 0.875rem;
+    }
+
+    .opinions__right {
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+
+    .opinions__right-author {
+        font-size: 1rem;
+    }
+
+    .footer__top .header {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center;
+    }
+
+    .footer__top .header__item {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .save_img {
+        position: absolute;
+        top: 90%;
+        z-index: 99999;
+        max-width: 90px;
+    }
+
+    .posts_item {
+        width: 100%;
+    }
+
+    .popup-form__left {
+        margin-right: 10px;
+    }
+
+    .popup-form__table thead th {
+        font-size: 1.0625rem;
+    }
+
+    .popup-form__table thead th:first-child {
+        padding-right: 20px;
+    }
+
+    .popup-form__table tbody tr td {
+        font-size: 1.0625rem;
+    }
+
+    .popup-form--fourth .popup__form-order-caption {
+        padding-bottom: 10px;
+    }
+
+    .popup-form--fourth .popup__form-order-caption strong {
+        font-size: 1.875rem;
+        line-height: 2rem;
+    }
+
+    .choose .intro_wrrap .text_part {
+        display: block;
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .choose .intro_wrrap .form_part {
+        display: block;
+        width: 100%;
+        margin: 2rem auto;
+        max-width: 20rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 720px) {
+    .popup-form__tour-program-content {
+        font-size: 1rem
+    }
+
+    .popup-form__tour-program-caption {
+        font-size: 1.125rem
+    }
+
+    .popup-form__tour-program-toggle-wrapper {
+        text-align: center
+    }
+
+    .popup-form__tour-program-toggle {
+        font-size: 1.125rem
+    }
+
+    .popup-form__tour-program-toggle:after {
+        top: 4px
+    }
+
+    .popup-form__tour-program-toggle.active:after {
+        top: 5px
+    }
+
+    .popup-form__content {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center
+    }
+
+    .popup-form__left {
+        margin-right: 0;
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+        -webkit-order: 1;
+        -moz-order: 1;
+        order: 1;
+        -ms-flex-order: 1
+    }
+
+    #form-in-popup-first .popup-form__left, #form-in-popup-second .popup-form__left {
+        margin-right: 0;
+        -webkit-box-ordinal-group: 0;
+        -moz-box-ordinal-group: 0;
+        box-ordinal-group: 0;
+        -webkit-order: 0;
+        -moz-order: 0;
+        order: 0;
+        -ms-flex-order: 0
+    }
+
+    .popup-form__left-caption {
+        padding-top: 20px
+    }
+
+    #form-in-popup-third .popup-form__left {
+        -webkit-box-ordinal-group: 0;
+        -moz-box-ordinal-group: 0;
+        box-ordinal-group: 0;
+        -webkit-order: 0;
+        -moz-order: 0;
+        order: 0;
+        -ms-flex-order: 0
+    }
+
+    #form-in-popup-third .popup-form__right {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+        -webkit-order: 1;
+        -moz-order: 1;
+        order: 1;
+        -ms-flex-order: 1
+    }
+
+    .custom-text {
+        padding-top: 40px
+    }
+
+    .custom-text__wrapper {
+        padding: 0
+    }
+
+    .custom-text__container {
+        padding: 0
+    }
+
+    .custom-text__close, .form-application__close {
+        top: 10px;
+        right: 0
+    }
+
+    .action__order {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center
+    }
+
+    .action__order-left {
+        margin-bottom: 20px
+    }
+
+    .btn_land_open {
+        border: 3px solid #fdc00f;
+        background: #007079;
+        height: 36px;
+        line-height: 29px;
+        font-size: 22px;
+    }
+
+    .block_landing .ship_icon {
+        top: 2px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .block_landing.hover .box-modal_close {
+        right: -36px;
+        padding: 20px 8px;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .header__logo {
+        text-align: center;
+    }
+
+    .header__contacts-item {
+        display: none;
+    }
+
+    .header__contacts-item--viber {
+        display: table;
+        margin: 0 auto;
+    }
+
+    .header__callback {
+        display: table;
+        margin: 14px auto 0;
+    }
+
+    .intro__content {
+        padding-top: 20px;
+    }
+
+    .calls_drop_box {
+        position: relative;
+    }
+
+    .calls_box_wrap {
+        display: table;
+        margin: 0 auto;
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .popup-form--fourth .popup__form-order-caption {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .popup-calculator__caption, .popup-calculator__price-caption {
+        font-size: 2rem;
+        line-height: 2.125rem;
+    }
+
+    .popup-calculator__subcaption {
+        font-size: 1.125rem;
+    }
+
+    .popup-calculator__price, .popup-calculator__price-currency {
+        font-size: 2rem;
+        line-height: 2.1875rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .intro__support {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .intro__action-btn--proposal {
+        display: none;
+    }
+
+    .intro__action-btn--proposal-for-small {
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    .intro__support-left, .intro__support-right {
+        max-width: 290px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .steps__subcaption {
+        font-size: 1rem;
+    }
+
+    .steps__text {
+        font-size: 1rem;
+    }
+
+    .steps__list {
+        margin-top: 30px;
+    }
+
+    .action__caption span {
+        display: inline-block;
+    }
+
+    .footer__top-container > div {
+        width: 100%;
+    }
+
+    .footer__top-container .footer__socials {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .caption {
+        font-size: 2.1875rem;
+        line-height: 2.5rem;
+    }
+
+    .reasons__caption span {
+        width: auto;
+        height: auto;
+        background-size: contain;
+        background-position: 50% 50%;
+        padding: 10px 15px 8px;
+    }
+
+    .about__caption span {
+        line-height: 65px;
+        padding: 15px 13px;
+    }
+
+    .reasons__subcaption {
+        font-size: 1rem;
+    }
+
+    .reasons__caption span {
+        line-height: 20px;
+    }
+
+    .about__subcaption {
+        font-size: 1rem;
+        padding-top: 0px;
+        padding: 0 5px;
+    }
+
+    .about__item-caption, .about__item-right__caption, .about__item-right__caption, .about__item--four .about__item-left__caption {
+        font-size: 1.875rem;
+    }
+
+    .about__item-caption--one span {
+        width: auto;
+        height: auto;
+        background-size: contain;
+        padding-left: 0;
+        padding: 4px 20px 10px;
+    }
+
+    .about__item--four .about__item-left__caption {
+        padding-bottom: 4px;
+    }
+
+    .about__item--four .about__item-left__caption span {
+        width: auto;
+        height: auto;
+        position: static;
+        background-size: contain;
+        padding: 8px 20px 5px;
+        line-height: 1.5625rem;
+        background-position: 50% 50%;
+    }
+
+    .about__item-right__caption {
+        text-align: left;
+        width: 400px;
+    }
+
+    .about__item--three .about__item-caption--three span {
+        width: auto;
+        height: auto;
+        position: static;
+        background-size: contain;
+        padding: 8px 20px 5px;
+        line-height: 1.5625rem;
+        background-position: 50% 50%;
+    }
+
+    .about__item--two .about__item-caption, .about__item--four .about__item-caption, .about__item--two .about__item-right__caption, .about__item--four .about__item-right__caption {
+        padding-bottom: 4px;
+    }
+
+    .about__item--two .about__item-caption span, .about__item--four .about__item-caption span, .about__item--two .about__item-right__caption span, .about__item--four .about__item-right__caption span {
+        width: auto;
+        height: auto;
+        position: static;
+        background-size: contain;
+        padding: 8px 20px 5px;
+        line-height: 1.5625rem;
+        background-position: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .form-application__field-label {
+        width: 80%;
+    }
+
+    .popup-calculator__caption {
+        padding-bottom: 20px;
+    }
+
+    .popup-calculator__info {
+        margin: 15px auto 10px;
+        border: 3px solid #e3e3e3;
+        padding: 10px 10px 8px;
+        max-width: 300px;
+    }
+
+    .popup-calculator__wrapper {
+        padding: 20px 0px;
+    }
+
+    .popup-calculator__container {
+        min-width: 350px;
+    }
+
+    .choose .form-application {
+        left: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .choose .form-application img {
+        top: -2rem;
+    }
+
+    .choose .bottom {
+        margin-left: 0;
+        width: 18rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .intro__desc-text {
+        font-size: 1rem;
+    }
+
+    .intro__sup-caption {
+        font-size: 1.125rem;
+    }
+
+    .intro__action-caption {
+        font-size: 1.25rem;
+    }
+
+    /*.header__item--tells {
+        display: none;
+    }*/
+    .header {
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        box-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+    }
+
+    .intro__caption {
+        font-size: 1.875rem;
+        line-height: 2.1875rem;
+    }
+
+    .intro__caption span strong {
+        line-height: 1.875rem;
+    }
+
+    .popup-form__container {
+        min-width: 350px;
+    }
+
+    .popup-calculator__container {
+        min-width: 320px;
+    }
+
+    .popup-calculator__container.small {
+        min-width: 320px;
+    }
+
+    .form-application--column.box-modal {
+        padding: 50px 20px;
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .box-modal {
+        max-width: 400px;
+        padding: 20px 10px 20px;
+    }
+
+    #bookModal-1.box-modal {
+        max-width: 300px;
+        padding: 10px 0px 20px;
+    }
+
+    .form-application__wrapper {
+        min-width: 260px;
+    }
+
+    .form-application--column.box-modal .form-application__btn {
+        line-height: 2.6875rem;
+    }
+
+    .popup-form__wrapper {
+        padding: 15px 10px;
+    }
+
+    .popup-form-why__caption {
+        font-size: 1.0625rem;
+    }
+
+    .popup-form-why__desc {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    html[lang="ru"] .reasons__item--4 .reasons__top span {
+        width: 295px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .save_img {
+        top: 60%;
+        right: 1rem
+    }
+
+    #bookModal-1.box-modal {
+        max-width: 280px;
+    }
+
+    #bookModal-1 .popup-form__container {
+        min-width: 275px;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    .intro__social-block-caption {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    #form-in-popup-third.box-modal {
+        max-width: 300px;
+    }
+
+    .intro__desc-text {
+        font-size: 1.0625rem;
+    }
+
+    .popup-calculator__container.small {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about__item-desc {
+        font-size: 1rem;
+        padding-bottom: 15px;
+    }
+
+    .popup-form__container {
+        min-width: 260px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .popup-calculator__container {
+        min-width: 240px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .popup-calculator__container.small {
+        min-width: 255px;
+    }
+
+    .popup-calculator__wrapper {
+        padding: 10px 0;
+    }
+
+    .popup-calculator__caption span {
+        padding: 3px 15px 2px;
+    }
+
+    .popup-calculator__btn {
+        max-width: 240px;
+        width: 100%;
+        width: 240px;
+        background: none;
+        border: 3px solid #1a1a1a;
+        height: 50px;
+        line-height: 2.875rem;
+        font-size: 1.0625rem;
+        white-space: nowrap;
+    }
+
+    .popup-calculator__btn:hover {
+        background: none;
+        background-color: #fdc00f;
+        border-color: #fdc00f;
+        height: 50px;
+    }
+
+    .arcticmodal-container_i2 {
+        padding: 10px;
+    }
+
+    .about__item-right__caption {
+        max-width: 400px;
+        width: auto;
+    }
+
+    .about__item {
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-align-items: flex-start;
+        -ms-align-items: flex-start;
+        -o-align-items: flex-start;
+        align-items: flex-start;
+        -ms-flex-align: start;
+    }
+
+    .custom-text__wrapper h1 {
+        font-size: 1.5625rem;
+    }
+
+    .form-application--column.box-modal {
+        padding: 50px 10px 30px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .intro__action-btn {
+        width: 240px;
+        background-image: none;
+        border: 2px solid #fdc00f;
+        line-height: 50px;
+        font-size: 0.9375rem;
+    }
+
+    .intro__action-btn:hover {
+        width: 240px;
+        background: #fdc00f;
+        line-height: 50px;
+    }
+
+    .caption {
+        font-size: 2.125rem;
+        line-height: 2.375rem;
+    }
+
+    .about__caption {
+        padding-bottom: 10px;
+    }
+
+    .about__caption span {
+        line-height: 20px;
+        background-position: 50% 50%;
+        padding: 8px 12px 6px;
+    }
+
+    .format__image {
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .save_img {
+        max-width: 70px
+    }
+
+    .popup-calculator__btn {
+        font-size: 0.9375rem;
+    }
+
+    .intro__action-btn {
+        font-size: 1rem;
+    }
+
+    .format__list-item {
+        font-size: 1.0625rem;
+    }
+
+    .format__btn {
+        font-size: 1.0625rem;
+    }
+
+    .action__order-left-btn-input {
+        left: -13px;
+    }
+
+    .action__order-left-btn {
+        font-size: 1.0625rem;
+        letter-spacing: -0.01em;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#userInput {
+    margin-top: 15px;
+    padding: 0 4px;
+    border: 2px solid #1a1a1a;
+    /*width: 25px;*/
+    width: 34px;
+    /*border: none;*/
+    font-size: 1.3125rem;
+    font-weight: 600;
+}
+
+/*12.06.17*/
+
+.xrelative {
+    position: relative;
+}
+
+.ico_checked {
+    position: absolute;
+    left: calc(100% + 5px);
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    opacity: .5;
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/checked.png) center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.validate_success ~ .ico_checked {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+
+.popup-form__field--count[style*='display: none'] ~ .ico_checked {
+    display: none;
+}
+
+.ico_checked {
+}
+
+
+.popup-form__right-caption {
+    position: relative;
+    /*margin-bottom: 36px;*/
+    padding-bottom: 36px;
+}
+
+.popup-form__right-caption:before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/down-arrow.png) center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.bootstrap-datetimepicker-widget table td.day.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
+.payment_method {
+    padding: 25px 0 10px;
+    text-align: center;
+}
+
+.dialog_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    vertical-align: middle;
+    display: none;
+    z-index: 1500;
+    padding: 40px 0
+}
+
+.dialog_wrapper .main_table {
+    width: 100%;
+    height: 100%;
+    padding-right: 20px
+}
+
+.dialog_wrapper .main_tcell {
+    padding: 0 20px
+}
+
+.dialog {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.25);
+    display: none;
+    z-index: 503;
+    position: relative
+}
+
+.dialog.error {
+    max-width: 350px;
+    padding: 0
+}
+
+.dialog.error .h2 {
+    padding: 24px;
+    border-bottom: 2px solid #441420;
+    color: #441420
+}
+
+.dialog.error p {
+    display: block;
+    padding: 0 24px 24px
+}
+
+.dialog .icon_close {
+    position: absolute;
+    top: -1.1em;
+    right: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    opacity: 1;
+    transition: all .3s ease
+}
+
+.dialog .icon_close:before, .dialog .icon_close:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 100%;
+    height: 0;
+    border: 2px solid;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 4px
+}
+
+.dialog .icon_close:after {
+    width: 0;
+    height: 100%
+}
+
+.dialog .icon_close:hover, .dialog .icon_close:focus {
+    color: #f44336;
+    opacity: 1
+}
+
+.dialog_bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 33, 33, 0.8);
+    display: none;
+    width: 100%;
+    height: 100%
+}
+
+.dialog_opened {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%
+}
+
+.dialog_opened .dialog_bg {
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.dialog_opened .dialog {
+    animation-name: showDialog;
+    animation-duration: .3s;
+    animation-fill-mode: both
+}
+
+.dialog_opened .dialog_wrapper {
+    display: block
+}
+
+.dialog_scrollable_mobile .dialog_wrapper {
+    width: 100% !important
+}
+
+.dialog_scrollable_mobile .main_table {
+    padding-right: 0 !important
+}
+
+.dialog_scrollable .dialog_wrapper {
+    overflow-y: scroll;
+    width: calc(100% + 40px)
+}
+
+@keyframes showDialog {
+    0% {
+        opacity: 0;
+        transform: translateY(40px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.table {
+    display: table
+}
+
+.tcell {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.xmodal_caption_error {
+    font-size: 20px;
+    text-align: center;
+    color: red
+}
+
+.flag_pl {
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/flag_pl.png) left center no-repeat;
+    letter-spacing: .075em
+}
+
+.flag_ge {
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/flag_ge.png) left center no-repeat;
+}
+
+.flag_cr {
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/flag_cr.png) left center no-repeat;
+    letter-spacing: .034em
+}
+
+.flag_uk {
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/flag_uk.png) left center no-repeat;
+    letter-spacing: .04em
+}
+
+.flag_ne {
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/flag_ne.png) left center no-repeat;
+    letter-spacing: .082em
+}
+
+.flag_us {
+    background: url(https://chernobyltime.com/wp-content/themes/chernobyl/images/flag_us.png) left center no-repeat;
+    letter-spacing: .074em
+}
